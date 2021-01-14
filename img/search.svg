@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="104.896" height="32" viewBox="0 0 104.896 32">
+  <defs>
+    <pattern id="pattern" width="1" height="1" viewBox="3.595 0 104.896 32">
+      <image preserveAspectRatio="xMidYMid slice" width="128" height="32" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAAeCAYAAADnydqVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASbSURBVGhD7ZvbTxNZHMd/bemFSymtIIIgpICGW4jX1figu4v4IvqiT0twd7PGx3UT8YV/YHljo49q0GdeiAkm4qqJy27c7CYki+4aolGK5RITiJuWCrY4Z/g1vXDOzDntKTDNfJKT+f1+dE575jvndy4zWNYUwCRvseLRJE8xBc5zTIHzHOYY/CkUgn8HB+H9sz8hGg5jVBuH1ws1586Cv6cHI3LqCYyMwMvrN1Q7mcLqajh+9w6Eg0H4vfciRhO0XOuD6q4u+E85d0apI53KL09Ce38//PHDJQi9eYNRPtJ/o4w6cgGzB78aGoL5x0+4RSGsLC7C66E7ipjPMCKvHi3CgQBaqYSn6XEZiP5GGjLq0IMp8NLzF2iJs/TPJFpy6rFYtUeSEEPIUGAaLToWS/YjVHJbM0VGHSyYLYytrKAlTjTpXBn1OLw+9ciCJSRL+DgOnxetzElua6bIqINF9rfwJuCqKEeLDisVL797B7FoFL2NuCoq0MpfhAWuPHECjt68qRbXzp0YFUekHr2/h6bpPXgtFoPl4Cx6G9GrV0ZbZV2vTBEWuMDthpL6OrVYCgowKo5IPWS2yfrM6ocPamERevsWrY04dXqwjLbKul6ZYogUTWCl01BAe5zVmmjp9ahoZBmW5+fVssZI9RarBa3tiXEEZojBSs9xWOMzmZk7fdqTt7mHv8L4Nz1qiSgi03A3NKK1PTG8wHprXdYNoJeeeag63QVVpzrRozP36BH8ptwgpETm5jC6eRhaYHLBZu7dQ4/O/1NTMDs2hl6CbGbQNpcLDv0yCK19fRhhQzZ4SO8nhUz6aOQyzRtGYCdlqUQuWDQSQY+O+hnKLlo2M1rynX/9eAX+vtoHsdVVjGZOWVs7WvIxfIpOx1muvWaOQ7thRFmcmIDZBxuzgwielhYo/+IIevIxkMCVaGnT/NMV3a1NAs8Ns/vMGeh8OKYW8mCDht52qBZWux32D/ysHnOFcQTm7HGe5mYo2rMHPTaydrHWYtovxJS1tUHT5cvopULS+8LTp+jlBmGBedaGPIjWU1BcDLaiIvTokF5pLy0Fd2MDRtjw9GAZbS2ur4e6C+ehqLYWI6kER++jlRuEBeZZG/KQST16opQ0rAvLszblWSbJaivBd+AAWqksTU4qaX4GPfkYJkUT9NJqvOfq9WAy5jk8HvQ2hx0H6QITgqOjaMmHKbDVnvm+qc3hQEtZ49lsaIljTTtXrweXNjWpRzf2ZBYyNjniJLdVC29HB3PytzA+jpZ8mAJ7WlrREsfTmji3pK4OLXFK/H601uFN0WQc1lou8Yy/vCS3VQsyh3DjDZhONs/M9WAK3Pj9d+qjLrJrw4u9rAz8vb1QcewoRgD8316Ewqoq9PjZcfgw7Pr6K/TW0RKGXMDCysRSSitNy5hB09qqh08jTeeKTXnxnSwHyGO7T7ijFJlfgOcDA6odh7wAV9PdrdrkDY7i2hrVNsmOLfnPBrJ9+Lj7LMQ+fsSIkkqcTjh2+1ZKLzTJni2ZRZPJRvpEiIg9PTyMnokstkRgQum+vWgliCb1aBM5bJ3Ae/ehZZI7AD4DI3vHadkOt5kAAAAASUVORK5CYII="/>
+    </pattern>
+  </defs>
+  <g id="Search_Box" data-name="Search Box" stroke="#dcdcdc" stroke-width="1" fill="url(#pattern)">
+    <rect width="104.896" height="32" stroke="none"/>
+    <rect x="0.5" y="0.5" width="103.896" height="31" fill="none"/>
+  </g>
+</svg>
