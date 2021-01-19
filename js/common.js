@@ -38,4 +38,24 @@ $(document).ready(function () {
     margin: 20
   });
 
+  $(".owl-2").owlCarousel({
+    items: 1,
+    smartSpeed: 1000,
+  });
+
+	$("#sandwich-1").on("click", function(){
+		$(this).toggleClass("active");
+		$(".body-dashboard").toggleClass("menubar-1");
+		window.dispatchEvent(new Event('resize'));
+	});
+
+	$("#sandwich-2").on("click", function(){
+		$(this).toggleClass("active");
+		$(".body-dashboard").toggleClass("menubar-2");
+	});
+
+  $(document).on('click.bs.dropdown.data-api', '.dropdown-menu', function (e) { 
+    e.stopPropagation();
+  });
+
 });

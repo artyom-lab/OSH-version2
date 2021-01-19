@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Oman Startup Hub</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body class="body-dashboard">
+
+		<header class="navbar navbar-expand-xl navbar-dashboard navbar-light fixed-top">
+			<div class="sidebar-top">
+				<div class="row align-items-center">
+					<div class="col">
+						<a class="logo navbar-brand" href="#!">
+							<img src="img/logo.svg" alt="">
+						</a>
+					</div>
+					<div class="col-auto">
+						<button class="sandwich d-xl-none" id="sandwich-1">
+					    <span></span>
+					  </button>
+					</div>
+				</div>
+			</div>
+			<div class="navbar-collapse" id="navbar">
+				<ul class="navbar-nav mx-auto fw-600">
+					<li class="nav-item">
+						<a href="#!" class="nav-link">Startups</a>
+					</li>
+					<li class="nav-item">
+						<a href="#!" class="nav-link">Supporters</a>
+					</li>
+					<li class="nav-item">
+						<a href="#!" class="nav-link">Advisors</a>
+					</li>
+					<li class="nav-item">
+						<a href="#!" class="nav-link">Events</a>
+					</li>
+					<li class="nav-item">
+						<a href="#!" class="nav-link">News</a>
+					</li>
+					<li class="nav-item">
+						<a href="#!" class="nav-link">How to use?</a>
+					</li>
+				</ul>
+			</div>
+			<div class="art align-items-center">
+				<div class="dropdown dropdown-1">
+					<a href="#!" class="dropdown-toggle align-middle pr-3 pr-sm-4" data-toggle="dropdown">
+						<span class="align-middle fz-0">
+							<img src="img/oman.png" alt="">
+						</span>
+						<span class="align-middle pl-1">عربي  </span>
+						<img src="img/arrow.svg" alt="">
+					</a>
+          <div class="dropdown-menu">
+            <a href="#!" class="dropdown-item">English</a>
+            <a href="#!" class="dropdown-item">عربي  </a>
+          </div>
+				</div>
+				<div class="fz-0 bell align-middle">
+					<a href="#!" class="position-relative">
+						<img src="img/bell.svg" alt="">
+						<span class="bell-circle"></span>
+					</a>
+				</div>
+				<div class="fz-14 pl-4 align-middle d-none d-md-block">Ibrahim Almalky</div>
+				<a href="#!" class="avatar align-middle ml-3" style="background-image: url(img/avatar.png)">
+					<span class="check-arrow">
+						<img src="img/check.svg" alt="">
+					</span>
+				</a>
+			</div>
+			<a href="#!" class="navbar-toggler">
+				<span></span>
+			</a>
+		</header>
+
+		<main class="main-dashboard">
+
+			<aside class="sidebar-1">
+				<div class="sidebar-bottom">
+					<nav class="accordion-wrap">
+						<a href="#!" class="accordion-links active">
+							<div class="px-26">
+								<div class="row row-1 align-items-center">
+									<div class="col-auto fz-0">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M2.34375 0H7.03125C8.32567 0 9.375 1.04933 9.375 2.34375V7.03125C9.375 8.32567 8.32567 9.375 7.03125 9.375H2.34375C1.04933 9.375 0 8.32567 0 7.03125V2.34375C0 1.04933 1.04933 0 2.34375 0ZM2.34375 1.17188C1.69654 1.17188 1.17188 1.69654 1.17188 2.34375V7.03125C1.17188 7.67846 1.69654 8.20312 2.34375 8.20312H7.03125C7.67846 8.20312 8.20312 7.67846 8.20312 7.03125V2.34375C8.20312 1.69654 7.67846 1.17188 7.03125 1.17188H2.34375ZM2.34375 10.625H7.03125C8.32567 10.625 9.375 11.6743 9.375 12.9688V17.6562C9.375 18.9507 8.32567 20 7.03125 20H2.34375C1.04933 20 0 18.9507 0 17.6562V12.9688C0 11.6743 1.04933 10.625 2.34375 10.625ZM2.34375 11.7969C1.69654 11.7969 1.17188 12.3215 1.17188 12.9688V17.6562C1.17188 18.3035 1.69654 18.8281 2.34375 18.8281H7.03125C7.67846 18.8281 8.20312 18.3035 8.20312 17.6562V12.9688C8.20312 12.3215 7.67846 11.7969 7.03125 11.7969H2.34375ZM17.6562 0H12.9688C11.6743 0 10.625 1.04933 10.625 2.34375V7.03125C10.625 8.32567 11.6743 9.375 12.9688 9.375H17.6562C18.9507 9.375 20 8.32567 20 7.03125V2.34375C20 1.04933 18.9507 0 17.6562 0ZM11.7969 2.34375C11.7969 1.69654 12.3215 1.17188 12.9688 1.17188H17.6562C18.3035 1.17188 18.8281 1.69654 18.8281 2.34375V7.03125C18.8281 7.67846 18.3035 8.20312 17.6562 8.20312H12.9688C12.3215 8.20312 11.7969 7.67846 11.7969 7.03125V2.34375ZM12.9688 10.625H17.6562C18.9507 10.625 20 11.6743 20 12.9688V17.6562C20 18.9507 18.9507 20 17.6562 20H12.9688C11.6743 20 10.625 18.9507 10.625 17.6562V12.9688C10.625 11.6743 11.6743 10.625 12.9688 10.625ZM12.9688 11.7969C12.3215 11.7969 11.7969 12.3215 11.7969 12.9688V17.6562C11.7969 18.3035 12.3215 18.8281 12.9688 18.8281H17.6562C18.3035 18.8281 18.8281 18.3035 18.8281 17.6562V12.9688C18.8281 12.3215 18.3035 11.7969 17.6562 11.7969H12.9688Z" fill="black"/>
+											<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M2.34375 0H7.03125C8.32567 0 9.375 1.04933 9.375 2.34375V7.03125C9.375 8.32567 8.32567 9.375 7.03125 9.375H2.34375C1.04933 9.375 0 8.32567 0 7.03125V2.34375C0 1.04933 1.04933 0 2.34375 0ZM2.34375 1.17188C1.69654 1.17188 1.17188 1.69654 1.17188 2.34375V7.03125C1.17188 7.67846 1.69654 8.20312 2.34375 8.20312H7.03125C7.67846 8.20312 8.20312 7.67846 8.20312 7.03125V2.34375C8.20312 1.69654 7.67846 1.17188 7.03125 1.17188H2.34375ZM2.34375 10.625H7.03125C8.32567 10.625 9.375 11.6743 9.375 12.9688V17.6562C9.375 18.9507 8.32567 20 7.03125 20H2.34375C1.04933 20 0 18.9507 0 17.6562V12.9688C0 11.6743 1.04933 10.625 2.34375 10.625ZM2.34375 11.7969C1.69654 11.7969 1.17188 12.3215 1.17188 12.9688V17.6562C1.17188 18.3035 1.69654 18.8281 2.34375 18.8281H7.03125C7.67846 18.8281 8.20312 18.3035 8.20312 17.6562V12.9688C8.20312 12.3215 7.67846 11.7969 7.03125 11.7969H2.34375ZM17.6562 0H12.9688C11.6743 0 10.625 1.04933 10.625 2.34375V7.03125C10.625 8.32567 11.6743 9.375 12.9688 9.375H17.6562C18.9507 9.375 20 8.32567 20 7.03125V2.34375C20 1.04933 18.9507 0 17.6562 0ZM11.7969 2.34375C11.7969 1.69654 12.3215 1.17188 12.9688 1.17188H17.6562C18.3035 1.17188 18.8281 1.69654 18.8281 2.34375V7.03125C18.8281 7.67846 18.3035 8.20312 17.6562 8.20312H12.9688C12.3215 8.20312 11.7969 7.67846 11.7969 7.03125V2.34375ZM12.9688 10.625H17.6562C18.9507 10.625 20 11.6743 20 12.9688V17.6562C20 18.9507 18.9507 20 17.6562 20H12.9688C11.6743 20 10.625 18.9507 10.625 17.6562V12.9688C10.625 11.6743 11.6743 10.625 12.9688 10.625ZM12.9688 11.7969C12.3215 11.7969 11.7969 12.3215 11.7969 12.9688V17.6562C11.7969 18.3035 12.3215 18.8281 12.9688 18.8281H17.6562C18.3035 18.8281 18.8281 18.3035 18.8281 17.6562V12.9688C18.8281 12.3215 18.3035 11.7969 17.6562 11.7969H12.9688Z" fill="white"/>
+											</mask>
+											<g mask="url(#mask0)">
+											<rect width="20" height="20" fill="#05385C"/>
+											</g>
+										</svg>
+									</div>
+									<div class="col">Dashboard</div>
+								</div>
+							</div>
+						</a>
+						<a href="#!" class="accordion-links">
+							<div class="px-26">
+								<div class="row row-1 align-items-center">
+									<div class="col-auto fz-0">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H16C18.2091 0 20 1.79086 20 4V16C20 18.2091 18.2091 20 16 20H4C1.79086 20 0 18.2091 0 16V4C0 1.79086 1.79086 0 4 0ZM4 2C2.89543 2 2 2.89543 2 4V16C2 17.1046 2.89543 18 4 18H16C17.1046 18 18 17.1046 18 16V4C18 2.89543 17.1046 2 16 2H4ZM11 15V11H15C15.5523 11 16 10.5523 16 10C16 9.44771 15.5523 9 15 9H11V5C11 4.44772 10.5523 4 10 4C9.44771 4 9 4.44772 9 5V9H5C4.44772 9 4 9.44771 4 10C4 10.5523 4.44772 11 5 11H9V15C9 15.5523 9.44771 16 10 16C10.5523 16 11 15.5523 11 15Z" fill="black"/>
+											<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H16C18.2091 0 20 1.79086 20 4V16C20 18.2091 18.2091 20 16 20H4C1.79086 20 0 18.2091 0 16V4C0 1.79086 1.79086 0 4 0ZM4 2C2.89543 2 2 2.89543 2 4V16C2 17.1046 2.89543 18 4 18H16C17.1046 18 18 17.1046 18 16V4C18 2.89543 17.1046 2 16 2H4ZM11 15V11H15C15.5523 11 16 10.5523 16 10C16 9.44771 15.5523 9 15 9H11V5C11 4.44772 10.5523 4 10 4C9.44771 4 9 4.44772 9 5V9H5C4.44772 9 4 9.44771 4 10C4 10.5523 4.44772 11 5 11H9V15C9 15.5523 9.44771 16 10 16C10.5523 16 11 15.5523 11 15Z" fill="white"/>
+											</mask>
+											<g mask="url(#mask0)">
+											<rect width="20" height="20" fill="#ABABAB"/>
+											</g>
+										</svg>
+									</div>
+									<div class="col">Add New</div>
+								</div>
+							</div>
+						</a>
+						<a href="#!" class="accordion-links">
+							<div class="px-26">
+								<div class="row row-1 align-items-center">
+									<div class="col-auto fz-0">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M2 16.9368C2 17.5182 1.55228 17.9895 1 17.9895C0.447715 17.9895 0 17.5182 0 16.9368V17.8947C0 19.0574 0.89543 20 2 20H4C5.10457 20 6 19.0574 6 17.8947V12.6316C6 11.4689 5.10457 10.5263 4 10.5263H2C2 5.8755 5.58172 2.10526 10 2.10526C14.4183 2.10526 18 5.8755 18 10.5263H16C14.8954 10.5263 14 11.4689 14 12.6316V17.8947C14 19.0574 14.8954 20 16 20H18C19.1046 20 20 19.0574 20 17.8947V13.7747C20 14.3561 19.5523 14.8274 19 14.8274C18.4477 14.8274 18 14.3561 18 13.7747V17.8947H16V12.6316H18V10.5263C19.1046 10.5263 20 11.4689 20 12.6316V10.5263C20 4.71263 15.523 0 10 0C4.477 0 0 4.71263 0 10.5263V12.6316C0 11.4689 0.89543 10.5263 2 10.5263V12.6316H4V17.8947H2V16.9368Z" fill="black"/>
+											<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M2 16.9368C2 17.5182 1.55228 17.9895 1 17.9895C0.447715 17.9895 0 17.5182 0 16.9368V17.8947C0 19.0574 0.89543 20 2 20H4C5.10457 20 6 19.0574 6 17.8947V12.6316C6 11.4689 5.10457 10.5263 4 10.5263H2C2 5.8755 5.58172 2.10526 10 2.10526C14.4183 2.10526 18 5.8755 18 10.5263H16C14.8954 10.5263 14 11.4689 14 12.6316V17.8947C14 19.0574 14.8954 20 16 20H18C19.1046 20 20 19.0574 20 17.8947V13.7747C20 14.3561 19.5523 14.8274 19 14.8274C18.4477 14.8274 18 14.3561 18 13.7747V17.8947H16V12.6316H18V10.5263C19.1046 10.5263 20 11.4689 20 12.6316V10.5263C20 4.71263 15.523 0 10 0C4.477 0 0 4.71263 0 10.5263V12.6316C0 11.4689 0.89543 10.5263 2 10.5263V12.6316H4V17.8947H2V16.9368Z" fill="white"/>
+											</mask>
+											<g mask="url(#mask0)">
+											<rect width="20" height="20" fill="#ABABAB"/>
+											</g>
+										</svg>
+									</div>
+									<div class="col">Support Activity</div>
+								</div>
+							</div>
+						</a>
+						<a href="#!" class="accordion-links">
+							<div class="px-26">
+								<div class="row row-1 align-items-center">
+									<div class="col-auto fz-0">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M6 0H13C14.6569 0 16 1.34315 16 3V20H3V3C3 1.34315 4.34315 0 6 0ZM5 3V18H7V17C7 16.4477 7.44772 16 8 16H11C11.5523 16 12 16.4477 12 17V18H14V3C14 2.44772 13.5523 2 13 2H6C5.44772 2 5 2.44772 5 3ZM8 4H7C6.44772 4 6 4.44772 6 5C6 5.55228 6.44772 6 7 6H8C8.55228 6 9 5.55228 9 5C9 4.44772 8.55228 4 8 4ZM7 7H8C8.55228 7 9 7.44772 9 8C9 8.55229 8.55228 9 8 9H7C6.44772 9 6 8.55229 6 8C6 7.44772 6.44772 7 7 7ZM8 10H7C6.44772 10 6 10.4477 6 11C6 11.5523 6.44772 12 7 12H8C8.55228 12 9 11.5523 9 11C9 10.4477 8.55228 10 8 10ZM7 13H8C8.55228 13 9 13.4477 9 14C9 14.5523 8.55228 15 8 15H7C6.44772 15 6 14.5523 6 14C6 13.4477 6.44772 13 7 13ZM12 4H11C10.4477 4 10 4.44772 10 5C10 5.55228 10.4477 6 11 6H12C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4ZM11 7H12C12.5523 7 13 7.44772 13 8C13 8.55229 12.5523 9 12 9H11C10.4477 9 10 8.55229 10 8C10 7.44772 10.4477 7 11 7ZM12 10H11C10.4477 10 10 10.4477 10 11C10 11.5523 10.4477 12 11 12H12C12.5523 12 13 11.5523 13 11C13 10.4477 12.5523 10 12 10ZM11 13H12C12.5523 13 13 13.4477 13 14C13 14.5523 12.5523 15 12 15H11C10.4477 15 10 14.5523 10 14C10 13.4477 10.4477 13 11 13Z" fill="black"/>
+											<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="0" width="13" height="20">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M6 0H13C14.6569 0 16 1.34315 16 3V20H3V3C3 1.34315 4.34315 0 6 0ZM5 3V18H7V17C7 16.4477 7.44772 16 8 16H11C11.5523 16 12 16.4477 12 17V18H14V3C14 2.44772 13.5523 2 13 2H6C5.44772 2 5 2.44772 5 3ZM8 4H7C6.44772 4 6 4.44772 6 5C6 5.55228 6.44772 6 7 6H8C8.55228 6 9 5.55228 9 5C9 4.44772 8.55228 4 8 4ZM7 7H8C8.55228 7 9 7.44772 9 8C9 8.55229 8.55228 9 8 9H7C6.44772 9 6 8.55229 6 8C6 7.44772 6.44772 7 7 7ZM8 10H7C6.44772 10 6 10.4477 6 11C6 11.5523 6.44772 12 7 12H8C8.55228 12 9 11.5523 9 11C9 10.4477 8.55228 10 8 10ZM7 13H8C8.55228 13 9 13.4477 9 14C9 14.5523 8.55228 15 8 15H7C6.44772 15 6 14.5523 6 14C6 13.4477 6.44772 13 7 13ZM12 4H11C10.4477 4 10 4.44772 10 5C10 5.55228 10.4477 6 11 6H12C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4ZM11 7H12C12.5523 7 13 7.44772 13 8C13 8.55229 12.5523 9 12 9H11C10.4477 9 10 8.55229 10 8C10 7.44772 10.4477 7 11 7ZM12 10H11C10.4477 10 10 10.4477 10 11C10 11.5523 10.4477 12 11 12H12C12.5523 12 13 11.5523 13 11C13 10.4477 12.5523 10 12 10ZM11 13H12C12.5523 13 13 13.4477 13 14C13 14.5523 12.5523 15 12 15H11C10.4477 15 10 14.5523 10 14C10 13.4477 10.4477 13 11 13Z" fill="white"/>
+											</mask>
+											<g mask="url(#mask0)">
+											<rect width="20" height="20" fill="#ABABAB"/>
+											</g>
+										</svg>
+									</div>
+									<div class="col">Companies</div>
+								</div>
+							</div>
+						</a>
+						<a href="#!" class="accordion-links">
+							<div class="px-26">
+								<div class="row row-1 align-items-center">
+									<div class="col-auto fz-0">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H4C1.79086 0 0 1.79086 0 4V16C0 18.2091 1.79086 20 4 20H16C18.2091 20 20 18.2091 20 16V4C20 1.79086 18.2091 0 16 0ZM2 4C2 2.89543 2.89543 2 4 2H16C17.1046 2 18 2.89543 18 4V16C18 17.0626 17.1713 17.9317 16.1248 17.9962C16.3548 17.9819 16.5809 17.9278 16.793 17.836C16.3109 16.1049 15.0353 14.7057 13.356 14.066C13.0195 13.926 12.6335 13.9801 12.3485 14.2073C12.0635 14.4345 11.9247 14.7987 11.9862 15.1579C12.0476 15.5172 12.2997 15.8145 12.644 15.934C13.6015 16.2986 14.3622 17.0481 14.741 18H14.74H5.229C5.58518 17.0529 6.3256 16.3009 7.267 15.93C7.60916 15.8061 7.85699 15.506 7.91407 15.1466C7.97115 14.7872 7.82847 14.4252 7.54154 14.2013C7.25461 13.9775 6.86872 13.9272 6.534 14.07C4.88478 14.7199 3.64246 16.1147 3.18704 17.8279C2.48761 17.5163 2 16.8151 2 16V4ZM3.30752 17.8769C3.26689 17.8619 3.22669 17.8456 3.187 17.828L3.18704 17.8279C3.22654 17.8455 3.26672 17.8618 3.30752 17.8769ZM3.7826 17.9883C3.6204 17.9707 3.46084 17.9333 3.30752 17.8769C3.45818 17.9325 3.61738 17.9705 3.7826 17.9883ZM16 18C16.0417 18 16.0833 17.9987 16.1248 17.9962C16.0835 17.9987 16.0419 18 16 18ZM10 4C12.2091 4 14 5.79086 14 8V10C14 12.2091 12.2091 14 10 14C7.79086 14 6 12.2091 6 10V8C6 5.79086 7.79086 4 10 4ZM8 8C8 6.89543 8.89543 6 10 6C11.1046 6 12 6.89543 12 8V10C12 11.1046 11.1046 12 10 12C8.89543 12 8 11.1046 8 10V8Z" fill="black"/>
+											<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H4C1.79086 0 0 1.79086 0 4V16C0 18.2091 1.79086 20 4 20H16C18.2091 20 20 18.2091 20 16V4C20 1.79086 18.2091 0 16 0ZM2 4C2 2.89543 2.89543 2 4 2H16C17.1046 2 18 2.89543 18 4V16C18 17.0626 17.1713 17.9317 16.1248 17.9962C16.3548 17.9819 16.5809 17.9278 16.793 17.836C16.3109 16.1049 15.0353 14.7057 13.356 14.066C13.0195 13.926 12.6335 13.9801 12.3485 14.2073C12.0635 14.4345 11.9247 14.7987 11.9862 15.1579C12.0476 15.5172 12.2997 15.8145 12.644 15.934C13.6015 16.2986 14.3622 17.0481 14.741 18H14.74H5.229C5.58518 17.0529 6.3256 16.3009 7.267 15.93C7.60916 15.8061 7.85699 15.506 7.91407 15.1466C7.97115 14.7872 7.82847 14.4252 7.54154 14.2013C7.25461 13.9775 6.86872 13.9272 6.534 14.07C4.88478 14.7199 3.64246 16.1147 3.18704 17.8279C2.48761 17.5163 2 16.8151 2 16V4ZM3.30752 17.8769C3.26689 17.8619 3.22669 17.8456 3.187 17.828L3.18704 17.8279C3.22654 17.8455 3.26672 17.8618 3.30752 17.8769ZM3.7826 17.9883C3.6204 17.9707 3.46084 17.9333 3.30752 17.8769C3.45818 17.9325 3.61738 17.9705 3.7826 17.9883ZM16 18C16.0417 18 16.0833 17.9987 16.1248 17.9962C16.0835 17.9987 16.0419 18 16 18ZM10 4C12.2091 4 14 5.79086 14 8V10C14 12.2091 12.2091 14 10 14C7.79086 14 6 12.2091 6 10V8C6 5.79086 7.79086 4 10 4ZM8 8C8 6.89543 8.89543 6 10 6C11.1046 6 12 6.89543 12 8V10C12 11.1046 11.1046 12 10 12C8.89543 12 8 11.1046 8 10V8Z" fill="white"/>
+											</mask>
+											<g mask="url(#mask0)">
+											<rect width="20" height="20" fill="#ABABAB"/>
+											</g>
+										</svg>
+									</div>
+									<div class="col">Advisors</div>
+								</div>
+							</div>
+						</a>
+						<a href="#!" class="accordion-links">
+							<div class="px-26">
+								<div class="row row-1 align-items-center">
+									<div class="col-auto fz-0">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M11 4C11 1.79086 9.20914 0 7 0C4.79086 0 3 1.79086 3 4V6C3 8.20914 4.79086 10 7 10C9.20914 10 11 8.20914 11 6V4ZM4.54154 10.2013C4.25461 9.97748 3.86872 9.92718 3.534 10.07C1.40188 10.91 0.000281583 12.9684 0 15.26V17C0 18.6569 1.34315 20 3 20H11C12.6569 20 14 18.6569 14 17V15.353C13.9998 13.0053 12.5499 10.9017 10.356 10.066C10.0195 9.92599 9.6335 9.98013 9.34851 10.2073C9.06353 10.4345 8.9247 10.7987 8.98617 11.1579C9.04765 11.5172 9.29969 11.8145 9.644 11.934C11.0627 12.4744 12.0002 13.8349 12 15.353V17C12 17.5523 11.5523 18 11 18H3C2.44772 18 2 17.5523 2 17V15.26C1.99994 13.7897 2.89907 12.469 4.267 11.93C4.60916 11.8061 4.85699 11.506 4.91407 11.1466C4.97115 10.7872 4.82847 10.4252 4.54154 10.2013ZM7 2C5.89543 2 5 2.89543 5 4V6C5 7.10457 5.89543 8 7 8C8.10457 8 9 7.10457 9 6V4C9 2.89543 8.10457 2 7 2ZM19 5H17V3C17 2.44772 16.5523 2 16 2C15.4477 2 15 2.44772 15 3V5H13C12.4477 5 12 5.44772 12 6C12 6.55228 12.4477 7 13 7H15V9C15 9.55229 15.4477 10 16 10C16.5523 10 17 9.55229 17 9V7H19C19.5523 7 20 6.55228 20 6C20 5.44772 19.5523 5 19 5Z" fill="black"/>
+											<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M11 4C11 1.79086 9.20914 0 7 0C4.79086 0 3 1.79086 3 4V6C3 8.20914 4.79086 10 7 10C9.20914 10 11 8.20914 11 6V4ZM4.54154 10.2013C4.25461 9.97748 3.86872 9.92718 3.534 10.07C1.40188 10.91 0.000281583 12.9684 0 15.26V17C0 18.6569 1.34315 20 3 20H11C12.6569 20 14 18.6569 14 17V15.353C13.9998 13.0053 12.5499 10.9017 10.356 10.066C10.0195 9.92599 9.6335 9.98013 9.34851 10.2073C9.06353 10.4345 8.9247 10.7987 8.98617 11.1579C9.04765 11.5172 9.29969 11.8145 9.644 11.934C11.0627 12.4744 12.0002 13.8349 12 15.353V17C12 17.5523 11.5523 18 11 18H3C2.44772 18 2 17.5523 2 17V15.26C1.99994 13.7897 2.89907 12.469 4.267 11.93C4.60916 11.8061 4.85699 11.506 4.91407 11.1466C4.97115 10.7872 4.82847 10.4252 4.54154 10.2013ZM7 2C5.89543 2 5 2.89543 5 4V6C5 7.10457 5.89543 8 7 8C8.10457 8 9 7.10457 9 6V4C9 2.89543 8.10457 2 7 2ZM19 5H17V3C17 2.44772 16.5523 2 16 2C15.4477 2 15 2.44772 15 3V5H13C12.4477 5 12 5.44772 12 6C12 6.55228 12.4477 7 13 7H15V9C15 9.55229 15.4477 10 16 10C16.5523 10 17 9.55229 17 9V7H19C19.5523 7 20 6.55228 20 6C20 5.44772 19.5523 5 19 5Z" fill="white"/>
+											</mask>
+											<g mask="url(#mask0)">
+											<rect width="20" height="20" fill="#ABABAB"/>
+											</g>
+										</svg>
+									</div>
+									<div class="col">Follow</div>
+								</div>
+							</div>
+						</a>
+						<a href="#!" class="accordion-links">
+							<div class="px-26">
+								<div class="row row-1 align-items-center">
+									<div class="col-auto fz-0">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M13 17C13 18.6569 11.6569 20 10 20C8.34315 20 7.00001 18.6569 7.00001 17H1.00001C0.997255 14.4384 2.08884 11.9976 4.00001 10.292V6C4.00001 3.85641 5.1436 1.87564 7.00001 0.803848C8.85641 -0.267949 11.1436 -0.267949 13 0.803848C14.8564 1.87564 16 3.85641 16 6V10.292C17.9112 11.9976 19.0028 14.4384 19 17H13ZM14.666 11.782L14 11.186V6C14 3.79086 12.2091 2 10 2C7.79087 2 6.00001 3.79086 6.00001 6V11.186L5.334 11.782C4.36755 12.6445 3.65987 13.7586 3.29001 15H16.71C16.3401 13.7586 15.6325 12.6445 14.666 11.782ZM11 17C11 17.5523 10.5523 18 10 18C9.44772 18 9.00001 17.5523 9.00001 17H11Z" fill="black"/>
+											<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="1" y="0" width="18" height="20">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M13 17C13 18.6569 11.6569 20 10 20C8.34315 20 7.00001 18.6569 7.00001 17H1.00001C0.997255 14.4384 2.08884 11.9976 4.00001 10.292V6C4.00001 3.85641 5.1436 1.87564 7.00001 0.803848C8.85641 -0.267949 11.1436 -0.267949 13 0.803848C14.8564 1.87564 16 3.85641 16 6V10.292C17.9112 11.9976 19.0028 14.4384 19 17H13ZM14.666 11.782L14 11.186V6C14 3.79086 12.2091 2 10 2C7.79087 2 6.00001 3.79086 6.00001 6V11.186L5.334 11.782C4.36755 12.6445 3.65987 13.7586 3.29001 15H16.71C16.3401 13.7586 15.6325 12.6445 14.666 11.782ZM11 17C11 17.5523 10.5523 18 10 18C9.44772 18 9.00001 17.5523 9.00001 17H11Z" fill="white"/>
+											</mask>
+											<g mask="url(#mask0)">
+											<rect width="20" height="20" fill="#ABABAB"/>
+											</g>
+										</svg>
+									</div>
+									<div class="col">Notification</div>
+								</div>
+							</div>
+						</a>
+						<a href="#!" class="accordion-links">
+							<div class="px-26">
+								<div class="row row-1 align-items-center">
+									<div class="col-auto fz-0">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M17 3H16V2C16 1.44772 15.5523 1 15 1C14.4477 1 14 1.44772 14 2V3H6V2C6 1.44772 5.55228 1 5 1C4.44772 1 4 1.44772 4 2V3H3C1.34315 3 0 4.34315 0 6V16C0 17.6569 1.34315 19 3 19H17C18.6569 19 20 17.6569 20 16V6C20 4.34315 18.6569 3 17 3ZM18 6C18 5.44772 17.5523 5 17 5H16V6C16 6.55228 15.5523 7 15 7C14.4477 7 14 6.55228 14 6V5H6V6C6 6.55228 5.55228 7 5 7C4.44772 7 4 6.55228 4 6V5H3C2.44772 5 2 5.44772 2 6V8H18V6ZM18 10H2V16C2 16.5523 2.44772 17 3 17H17C17.5523 17 18 16.5523 18 16V10Z" fill="black"/>
+											<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="1" width="20" height="18">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M17 3H16V2C16 1.44772 15.5523 1 15 1C14.4477 1 14 1.44772 14 2V3H6V2C6 1.44772 5.55228 1 5 1C4.44772 1 4 1.44772 4 2V3H3C1.34315 3 0 4.34315 0 6V16C0 17.6569 1.34315 19 3 19H17C18.6569 19 20 17.6569 20 16V6C20 4.34315 18.6569 3 17 3ZM18 6C18 5.44772 17.5523 5 17 5H16V6C16 6.55228 15.5523 7 15 7C14.4477 7 14 6.55228 14 6V5H6V6C6 6.55228 5.55228 7 5 7C4.44772 7 4 6.55228 4 6V5H3C2.44772 5 2 5.44772 2 6V8H18V6ZM18 10H2V16C2 16.5523 2.44772 17 3 17H17C17.5523 17 18 16.5523 18 16V10Z" fill="white"/>
+											</mask>
+											<g mask="url(#mask0)">
+											<rect width="20" height="20" fill="#ABABAB"/>
+											</g>
+										</svg>
+									</div>
+									<div class="col">Events & News</div>
+								</div>
+							</div>
+						</a>
+						<a href="#!" class="accordion-links">
+							<div class="px-26">
+								<div class="row row-1 align-items-center">
+									<div class="col-auto fz-0">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 15.523 4.477 20 10 20C15.523 20 20 15.523 20 10C20 4.477 15.523 0 10 0C4.477 0 0 4.477 0 10ZM18 10C18 14.4183 14.4183 18 10 18C7.96734 18 6.11174 17.2419 4.7005 15.9931C5.07483 16.324 5.47949 16.6195 5.90935 16.8756L5.909 16.876H5.91L5.90935 16.8756C6.27429 16.4678 6.73517 16.1399 7.267 15.93C7.60916 15.8061 7.85699 15.506 7.91407 15.1466C7.97115 14.7872 7.82847 14.4252 7.54154 14.2013C7.25461 13.9775 6.86872 13.9272 6.534 14.07C5.6811 14.4053 4.9241 14.9459 4.33015 15.6438C2.89007 14.1972 2 12.2025 2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10ZM4.33015 15.6438C4.44986 15.7641 4.57338 15.8806 4.7005 15.9931C4.57344 15.8807 4.44987 15.7643 4.33 15.644L4.33015 15.6438ZM10 4C12.2091 4 14 5.79086 14 8V10C14 12.2091 12.2091 14 10 14C7.79086 14 6 12.2091 6 10V8C6 5.79086 7.79086 4 10 4ZM8 8C8 6.89543 8.89543 6 10 6C11.1046 6 12 6.89543 12 8V10C12 11.1046 11.1046 12 10 12C8.89543 12 8 11.1046 8 10V8ZM12.644 15.934C13.1836 16.1394 13.6668 16.4697 14.054 16.898C14.6317 16.5575 15.1645 16.1459 15.64 15.673C15.0251 14.9547 14.2398 14.4021 13.356 14.066C13.0195 13.926 12.6335 13.9801 12.3485 14.2073C12.0635 14.4345 11.9247 14.7987 11.9862 15.1579C12.0476 15.5172 12.2997 15.8145 12.644 15.934Z" fill="black"/>
+											<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 15.523 4.477 20 10 20C15.523 20 20 15.523 20 10C20 4.477 15.523 0 10 0C4.477 0 0 4.477 0 10ZM18 10C18 14.4183 14.4183 18 10 18C7.96734 18 6.11174 17.2419 4.7005 15.9931C5.07483 16.324 5.47949 16.6195 5.90935 16.8756L5.909 16.876H5.91L5.90935 16.8756C6.27429 16.4678 6.73517 16.1399 7.267 15.93C7.60916 15.8061 7.85699 15.506 7.91407 15.1466C7.97115 14.7872 7.82847 14.4252 7.54154 14.2013C7.25461 13.9775 6.86872 13.9272 6.534 14.07C5.6811 14.4053 4.9241 14.9459 4.33015 15.6438C2.89007 14.1972 2 12.2025 2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10ZM4.33015 15.6438C4.44986 15.7641 4.57338 15.8806 4.7005 15.9931C4.57344 15.8807 4.44987 15.7643 4.33 15.644L4.33015 15.6438ZM10 4C12.2091 4 14 5.79086 14 8V10C14 12.2091 12.2091 14 10 14C7.79086 14 6 12.2091 6 10V8C6 5.79086 7.79086 4 10 4ZM8 8C8 6.89543 8.89543 6 10 6C11.1046 6 12 6.89543 12 8V10C12 11.1046 11.1046 12 10 12C8.89543 12 8 11.1046 8 10V8ZM12.644 15.934C13.1836 16.1394 13.6668 16.4697 14.054 16.898C14.6317 16.5575 15.1645 16.1459 15.64 15.673C15.0251 14.9547 14.2398 14.4021 13.356 14.066C13.0195 13.926 12.6335 13.9801 12.3485 14.2073C12.0635 14.4345 11.9247 14.7987 11.9862 15.1579C12.0476 15.5172 12.2997 15.8145 12.644 15.934Z" fill="white"/>
+											</mask>
+											<g mask="url(#mask0)">
+											<rect width="20" height="20" fill="#ABABAB"/>
+											</g>
+										</svg>
+									</div>
+									<div class="col">Profile</div>
+								</div>
+							</div>
+						</a>
+					</nav>
+				</div>
+			</aside>
+
+			<section class="content flex-grow-1">
+				
+				<div class="row mb-4">
+					<div class="col-md blue">
+						<h1 class="lh-1 o-hidden">
+							<div data-aos="fade-up">Hello! Ibrahim Almalky</div>
+						</h1>
+						<div clas="fz-20">We are glad to see you again!</div>
+					</div>
+					<div class="col-md-auto">
+						<a href="#!" class="btn btn-login btn-add mt-2">
+							<span class="fz-0 align-middle">
+								<img src="img/cross.svg" alt="">
+							</span>
+							<span class="align-middle pl-2">Add to OSH</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-4 blue">
+						<div class="row justify-content-center">
+							<div class="col-sm-6 col-md-4 col-lg-12">
+								<div class="cart cart-2">
+									<div class="cart-content">
+										<div class="row row-1">
+											<div class="col-auto">
+												<img src="img/dash-1.svg" alt="">
+											</div>
+											<div class="col">
+												<div class="fz-20">Support Activity</div>
+												<div class="fz-40 titillium fw-600 lh-12">282</div>
+											</div>
+										</div>
+										<div class="col"></div>
+									</div>
+								</div>	
+							</div>			
+							<div class="col-sm-6 col-md-4 col-lg-12">
+								<div class="cart cart-2">
+									<div class="cart-content">
+										<div class="row row-1">
+											<div class="col-auto">
+												<img src="img/dash-2.svg" alt="">
+											</div>
+											<div class="col">
+												<div class="fz-20">Funding Rounds</div>
+												<div class="fz-40 titillium fw-600 lh-12">355</div>
+											</div>
+										</div>
+										<div class="col"></div>
+									</div>
+								</div>	
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-12">
+								<div class="cart">
+									<div class="cart-content">
+										<div class="row row-1">
+											<div class="col-auto">
+												<img src="img/dash-3.svg" alt="">
+											</div>
+											<div class="col">
+												<div class="fz-20">All Followers</div>
+												<div class="fz-40 titillium fw-600 lh-12">820k</div>
+											</div>
+										</div>
+										<div class="col"></div>
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-8">
+						<div class="cart">
+							<div class="cart-content">
+								<div class="row align-items-center">
+									<div class="col">
+										<ul class="nav nav-dashboard flex-column flex-md-row">
+											<li class="nav-item py-2">
+												<a class="nav-link active" data-toggle="pill" href="#companies"><span>Companies</span></a>
+											</li>
+											<li class="nav-item py-2">
+												<a class="nav-link" data-toggle="pill" href="#startup"><span>Startup</span></a>
+											</li>
+											<li class="nav-item py-2">
+												<a class="nav-link" data-toggle="pill" href="#supporters"><span>Supporters</span></a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-auto">
+										<a href="#!" class="link-pink mx-3">View All</a>
+									</div>
+								</div>
+							</div>
+							<div class="block-dashboard scroll-wrap">
+								<div class="scroll">
+				    			<div class="tab-content">
+										<div class="tab-pane fade show active" id="companies">
+											<div class="bg-gray p-3 mb-2">
+												<div class="row align-items-center">
+													<div class="col-sm-8 col-md-6">
+														<div class="row row-1 align-items-center">
+															<div class="col-auto">
+																<img src="img/dash-4.svg" alt="">
+															</div>
+															<div class="col">
+																<h6>Eyecomms</h6>
+																<div class="fz-12 titillium">Is a long established fact that a reader will bedistracted by the readable content of</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-4 col-md-6 text-right mt-3 mt-sm-0">
+														<button class="btn btn-approval align-middle mr-3">Approval</button>
+														<a href="#!" class="three-points align-middle">•••</a>
+													</div>
+												</div>
+											</div>
+											<div class="bg-gray p-3 mb-2">
+												<div class="row align-items-center">
+													<div class="col-sm-8 col-md-6">
+														<div class="row row-1 align-items-center">
+															<div class="col-auto">
+																<img src="img/dash-5.svg" alt="">
+															</div>
+															<div class="col">
+																<h6>Eco-Innovate Oman Accelerator</h6>
+																<div class="fz-12 titillium">Is a long established fact that a reader will bedistracted by the readable content of</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-4 col-md-6 text-right mt-3 mt-sm-0">
+														<button class="btn btn-approval align-middle mr-3">Approval</button>
+														<a href="#!" class="three-points align-middle">•••</a>
+													</div>
+												</div>
+											</div>
+											<div class="bg-gray p-3 mb-2">
+												<div class="row align-items-center">
+													<div class="col-sm-8 col-md-6">
+														<div class="row row-1 align-items-center">
+															<div class="col-auto">
+																<img src="img/dash-6.svg" alt="">
+															</div>
+															<div class="col">
+																<h6>Pelion Venture Partners</h6>
+																<div class="fz-12 titillium">Is a long established fact that a reader will bedistracted by the readable content of</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-4 col-md-6 text-right mt-3 mt-sm-0">
+														<button class="btn btn-approval btn-pending align-middle mr-3">Pending</button>
+														<a href="#!" class="three-points align-middle">•••</a>
+													</div>
+												</div>
+											</div>
+										</div>			
+										<div class="tab-pane fade show" id="startup">
+											<div class="bg-gray p-3 mb-2">
+												<div class="row align-items-center">
+													<div class="col-sm-8 col-md-6">
+														<div class="row row-1 align-items-center">
+															<div class="col-auto">
+																<img src="img/dash-4.svg" alt="">
+															</div>
+															<div class="col">
+																<h6>Lorem</h6>
+																<div class="fz-12 titillium">Is a long established fact that a reader will bedistracted by the readable content of</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-4 col-md-6 text-right mt-3 mt-sm-0">
+														<button class="btn btn-approval align-middle mr-3">Approval</button>
+														<a href="#!" class="three-points align-middle">•••</a>
+													</div>
+												</div>
+											</div>
+											<div class="bg-gray p-3 mb-2">
+												<div class="row align-items-center">
+													<div class="col-sm-8 col-md-6">
+														<div class="row row-1 align-items-center">
+															<div class="col-auto">
+																<img src="img/dash-5.svg" alt="">
+															</div>
+															<div class="col">
+																<h6>Lorem</h6>
+																<div class="fz-12 titillium">Is a long established fact that a reader will bedistracted by the readable content of</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-4 col-md-6 text-right mt-3 mt-sm-0">
+														<button class="btn btn-approval align-middle mr-3">Approval</button>
+														<a href="#!" class="three-points align-middle">•••</a>
+													</div>
+												</div>
+											</div>
+											<div class="bg-gray p-3 mb-2">
+												<div class="row align-items-center">
+													<div class="col-sm-8 col-md-6">
+														<div class="row row-1 align-items-center">
+															<div class="col-auto">
+																<img src="img/dash-6.svg" alt="">
+															</div>
+															<div class="col">
+																<h6>Lorem</h6>
+																<div class="fz-12 titillium">Is a long established fact that a reader will bedistracted by the readable content of</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-4 col-md-6 text-right mt-3 mt-sm-0">
+														<button class="btn btn-approval btn-pending align-middle mr-3">Pending</button>
+														<a href="#!" class="three-points align-middle">•••</a>
+													</div>
+												</div>
+											</div>
+											<div class="bg-gray p-3 mb-2">
+												<div class="row align-items-center">
+													<div class="col-sm-8 col-md-6">
+														<div class="row row-1 align-items-center">
+															<div class="col-auto">
+																<img src="img/dash-6.svg" alt="">
+															</div>
+															<div class="col">
+																<h6>Lorem</h6>
+																<div class="fz-12 titillium">Is a long established fact that a reader will bedistracted by the readable content of</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-4 col-md-6 text-right mt-3 mt-sm-0">
+														<button class="btn btn-approval btn-pending align-middle mr-3">Pending</button>
+														<a href="#!" class="three-points align-middle">•••</a>
+													</div>
+												</div>
+											</div>
+											<div class="bg-gray p-3 mb-2">
+												<div class="row align-items-center">
+													<div class="col-sm-8 col-md-6">
+														<div class="row row-1 align-items-center">
+															<div class="col-auto">
+																<img src="img/dash-6.svg" alt="">
+															</div>
+															<div class="col">
+																<h6>Lorem</h6>
+																<div class="fz-12 titillium">Is a long established fact that a reader will bedistracted by the readable content of</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-4 col-md-6 text-right mt-3 mt-sm-0">
+														<button class="btn btn-approval btn-pending align-middle mr-3">Pending</button>
+														<a href="#!" class="three-points align-middle">•••</a>
+													</div>
+												</div>
+											</div>
+										</div>			
+										<div class="tab-pane fade show" id="supporters">
+											<div class="bg-gray p-3 mb-2">
+												<div class="row align-items-center">
+													<div class="col-sm-8 col-md-6">
+														<div class="row row-1 align-items-center">
+															<div class="col-auto">
+																<img src="img/dash-4.svg" alt="">
+															</div>
+															<div class="col">
+																<h6>Lorem</h6>
+																<div class="fz-12 titillium">Is a long established fact that a reader will bedistracted by the readable content of</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-4 col-md-6 text-right mt-3 mt-sm-0">
+														<button class="btn btn-approval align-middle mr-3">Approval</button>
+														<a href="#!" class="three-points align-middle">•••</a>
+													</div>
+												</div>
+											</div>
+											<div class="bg-gray p-3 mb-2">
+												<div class="row align-items-center">
+													<div class="col-sm-8 col-md-6">
+														<div class="row row-1 align-items-center">
+															<div class="col-auto">
+																<img src="img/dash-5.svg" alt="">
+															</div>
+															<div class="col">
+																<h6>Lorem</h6>
+																<div class="fz-12 titillium">Is a long established fact that a reader will bedistracted by the readable content of</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-4 col-md-6 text-right mt-3 mt-sm-0">
+														<button class="btn btn-approval align-middle mr-3">Approval</button>
+														<a href="#!" class="three-points align-middle">•••</a>
+													</div>
+												</div>
+											</div>
+											<div class="bg-gray p-3 mb-2">
+												<div class="row align-items-center">
+													<div class="col-sm-8 col-md-6">
+														<div class="row row-1 align-items-center">
+															<div class="col-auto">
+																<img src="img/dash-6.svg" alt="">
+															</div>
+															<div class="col">
+																<h6>Lorem</h6>
+																<div class="fz-12 titillium">Is a long established fact that a reader will bedistracted by the readable content of</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-4 col-md-6 text-right mt-3 mt-sm-0">
+														<button class="btn btn-approval btn-pending align-middle mr-3">Pending</button>
+														<a href="#!" class="three-points align-middle">•••</a>
+													</div>
+												</div>
+											</div>
+											<div class="bg-gray p-3 mb-2">
+												<div class="row align-items-center">
+													<div class="col-sm-8 col-md-6">
+														<div class="row row-1 align-items-center">
+															<div class="col-auto">
+																<img src="img/dash-6.svg" alt="">
+															</div>
+															<div class="col">
+																<h6>Lorem</h6>
+																<div class="fz-12 titillium">Is a long established fact that a reader will bedistracted by the readable content of</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-4 col-md-6 text-right mt-3 mt-sm-0">
+														<button class="btn btn-approval btn-pending align-middle mr-3">Pending</button>
+														<a href="#!" class="three-points align-middle">•••</a>
+													</div>
+												</div>
+											</div>
+											<div class="bg-gray p-3 mb-2">
+												<div class="row align-items-center">
+													<div class="col-sm-8 col-md-6">
+														<div class="row row-1 align-items-center">
+															<div class="col-auto">
+																<img src="img/dash-6.svg" alt="">
+															</div>
+															<div class="col">
+																<h6>Lorem</h6>
+																<div class="fz-12 titillium">Is a long established fact that a reader will bedistracted by the readable content of</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-4 col-md-6 text-right mt-3 mt-sm-0">
+														<button class="btn btn-approval btn-pending align-middle mr-3">Pending</button>
+														<a href="#!" class="three-points align-middle">•••</a>
+													</div>
+												</div>
+											</div>
+										</div>			
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col">
+						<div class="cart">
+							<div class="cart-content-2">
+								<div class="row mb-3">
+									<div class="col">
+										<h4 class="o-hidden">
+											<div data-aos="fade-up">Upcoming Events</div>
+										</h4>
+										<div class="fz-14">Lorem ipsum consectetur adipiscing</div>
+									</div>
+									<div class="col-auto">
+										<a href="#!" class="link-pink mt-2">
+											<span class="fz-0 align-middle">
+												<img src="img/cross2.svg" alt="">
+											</span>
+											<span class="align-middle pl-2">Add Events</span>
+										</a>
+									</div>
+								</div>
+								<div class="row row-1 justify-content-center">
+									<div class="col-md-6 col-lg-4 mb-3">
+										<div href="#!" class="cart-events">
+											<div class="bg-img position-relative embed-responsive embed-responsive-16by9" style="background-image: url(img/events-1.jpg)">
+												<a href="#!" class="three-points">•••</a>
+											</div>
+											<div class="block-events">
+												<a href="#!" class="h6 mb-2 d-inline-block">Lorem ipsum dolor sit amet consectetur adipiscing elit mauris elementum.</a>
+												<div class="row blue fz-0 pb-1">
+	                        <div class="col-auto mb-2">
+	                          <span class="align-middle">
+	                          	<img src="img/calendar.svg" alt="">
+	                          </span>
+	                          <span class="align-middle fz-12 ml-1">26 Dec, 2020</span>
+	                        </div>
+	                        <div class="col-auto mb-2">
+	                          <span class="align-middle">
+	                          	<img src="img/time.svg" alt="">
+	                          </span>
+	                          <span class="align-middle fz-12 ml-1">9:00 AM</span>
+	                        </div>
+	                        <div class="col-auto mb-2">
+	                          <span class="align-middle">
+	                          	<img src="img/location.svg" alt="">
+	                          </span>
+	                          <span class="align-middle fz-12 ml-1">Alexandria</span>
+	                        </div>
+	                      </div>
+                    		<div class="pb-2">
+                    			<a href="#!" class="link-tag"><i>#</i>amet</a>
+                    			<a href="#!" class="link-tag"><i>#</i>consectetur</a>
+                    			<a href="#!" class="link-tag"><i>#</i>tempor</a>
+                    		</div>
+                    		<div class="bt-1 mt-auto">
+													<div class="row pink justify-content-between fz-0 pt-4">
+		                        <div class="col-auto">
+		                        	<a href="#!" class="link-pink">
+			                          <span class="align-middle fz-14 mr-1">View</span>
+			                          <img src="img/arrow-pink.svg" class="arrow-pink align-middle mt-1" alt="">
+		                        	</a>
+		                        </div>
+		                        <div class="col-auto">
+		                        	<a href="#!" class="link-pink font-weight-normal">
+		                        		<img src="img/share.svg" class="align-middle" alt="">
+			                          <span class="align-middle fz-12 ml-1">Share</span>
+		                        	</a>
+		                        </div>
+		                      </div>
+
+
+                    		</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 col-lg-4 mb-3">
+										<div href="#!" class="cart-events">
+											<div class="bg-img position-relative embed-responsive embed-responsive-16by9" style="background-image: url(img/events-2.jpg)">
+												<a href="#!" class="three-points">•••</a>
+											</div>
+											<div class="block-events">
+												<a href="#!" class="h6 mb-2 d-inline-block">Volutpat augue vitae faucibus venenatis mauris eu sollicitudin lacus.</a>
+												<div class="row blue fz-0 pb-1">
+	                        <div class="col-auto mb-2">
+	                          <span class="align-middle">
+	                          	<img src="img/calendar.svg" alt="">
+	                          </span>
+	                          <span class="align-middle fz-12 ml-1">26 Dec, 2020</span>
+	                        </div>
+	                        <div class="col-auto mb-2">
+	                          <span class="align-middle">
+	                          	<img src="img/time.svg" alt="">
+	                          </span>
+	                          <span class="align-middle fz-12 ml-1">9:00 AM</span>
+	                        </div>
+	                        <div class="col-auto mb-2">
+	                          <span class="align-middle">
+	                          	<img src="img/location.svg" alt="">
+	                          </span>
+	                          <span class="align-middle fz-12 ml-1">Alexandria</span>
+	                        </div>
+	                      </div>
+                    		<div class="pb-2">
+                    			<a href="#!" class="link-tag"><i>#</i>amet</a>
+                    			<a href="#!" class="link-tag"><i>#</i>consectetur</a>
+                    			<a href="#!" class="link-tag"><i>#</i>tempor</a>
+                    		</div>
+                    		<div class="bt-1 mt-auto">
+													<div class="row pink justify-content-between fz-0 pt-4">
+		                        <div class="col-auto">
+		                        	<a href="#!" class="link-pink">
+			                          <span class="align-middle fz-14 mr-1">View</span>
+			                          <img src="img/arrow-pink.svg" class="arrow-pink align-middle mt-1" alt="">
+		                        	</a>
+		                        </div>
+		                        <div class="col-auto">
+		                        	<a href="#!" class="link-pink font-weight-normal">
+		                        		<img src="img/share.svg" class="align-middle" alt="">
+			                          <span class="align-middle fz-12 ml-1">Share</span>
+		                        	</a>
+		                        </div>
+		                      </div>
+
+
+                    		</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 col-lg-4 mb-3">
+										<div href="#!" class="cart-events">
+											<div class="bg-img position-relative embed-responsive embed-responsive-16by9" style="background-image: url(img/events-3.jpg)">
+												<a href="#!" class="three-points">•••</a>
+											</div>
+											<div class="block-events">
+												<a href="#!" class="h6 mb-2 d-inline-block">Fusce at purus sed mauris comodo blandit vel vitae erat at enim lacus.</a>
+												<div class="row blue fz-0 pb-1">
+	                        <div class="col-auto mb-2">
+	                          <span class="align-middle">
+	                          	<img src="img/calendar.svg" alt="">
+	                          </span>
+	                          <span class="align-middle fz-12 ml-1">26 Dec, 2020</span>
+	                        </div>
+	                        <div class="col-auto mb-2">
+	                          <span class="align-middle">
+	                          	<img src="img/time.svg" alt="">
+	                          </span>
+	                          <span class="align-middle fz-12 ml-1">9:00 AM</span>
+	                        </div>
+	                        <div class="col-auto mb-2">
+	                          <span class="align-middle">
+	                          	<img src="img/location.svg" alt="">
+	                          </span>
+	                          <span class="align-middle fz-12 ml-1">Alexandria</span>
+	                        </div>
+	                      </div>
+                    		<div class="pb-2">
+                    			<a href="#!" class="link-tag"><i>#</i>amet</a>
+                    			<a href="#!" class="link-tag"><i>#</i>consectetur</a>
+                    			<a href="#!" class="link-tag"><i>#</i>tempor</a>
+                    		</div>
+                    		<div class="bt-1 mt-auto">
+													<div class="row pink justify-content-between fz-0 pt-4">
+		                        <div class="col-auto">
+		                        	<a href="#!" class="link-pink">
+			                          <span class="align-middle fz-14 mr-1">View</span>
+			                          <img src="img/arrow-pink.svg" class="arrow-pink align-middle mt-1" alt="">
+		                        	</a>
+		                        </div>
+		                        <div class="col-auto">
+		                        	<a href="#!" class="link-pink font-weight-normal">
+		                        		<img src="img/share.svg" class="align-middle" alt="">
+			                          <span class="align-middle fz-12 ml-1">Share</span>
+		                        	</a>
+		                        </div>
+		                      </div>
+
+
+                    		</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+			</section>
+
+		</main>
+
+		<footer class="footer-wrapper bg-white">
+			<div class="page-footer">
+				<div class="container pt-5 mt-sm-4">
+					<div class="row row-2 justify-content-md-center">
+						<div class="col-auto mb-4">
+							<h5 class="mb-3">Important Links</h5>
+							<div class="mb-1">
+								<a href="#!">Startups</a>
+							</div>
+							<div class="mb-1">
+								<a href="#!">Supporters</a>
+							</div>
+							<div class="mb-1">
+								<a href="#!">Advisors</a>
+							</div>
+							<div class="mb-1">
+								<a href="#!">Success Stories</a>
+							</div>
+							<div class="mb-1">
+								<a href="#!">Discover</a>
+							</div>
+							<div class="mb-1">
+								<a href="#!">Resources</a>
+							</div>
+						</div>
+						<div class="col-auto mb-4">
+							<h5 class="mb-3">Why Oman</h5>
+							<div class="mb-1">
+								<a href="#!">Why Setup Your Business in Oman</a>
+							</div>
+							<div class="mb-1">
+								<a href="#!">Top Business Opportunities</a>
+							</div>
+							<div class="mb-1">
+								<a href="#!">Quick Links</a>
+							</div>
+						</div>
+						<div class="col-auto mb-4">
+							<h5 class="mb-3">About Us</h5>
+							<div class="mb-1">
+								<a href="#!">About OSH</a>
+							</div>
+							<div class="mb-1">
+								<a href="#!">Join Us</a>
+							</div>
+							<div class="mb-1">
+								<a href="#!">Benefits</a>
+							</div>
+							<div class="mb-1">
+								<a href="#!">FAQs</a>
+							</div>
+						</div>
+						<div class="col-auto mb-4">
+							<h5 class="mb-3">Events</h5>
+							<div class="mb-1">
+								<a href="#!">Upcoming</a>
+							</div>
+							<div class="mb-1">
+								<a href="#!">Past</a>
+							</div>
+							<div class="mb-1">
+								<a href="#!">Webinars</a>
+							</div>
+						</div>
+						<div class="col-md-8 mb-4 col-lg-6 col-xl my-4 my-xl-0">
+							<h5 class="mb-3">Subscribe to our Newsletter</h5>
+              <div class="input-group mb-3">
+							  <input type="text" class="form-control" placeholder="Enter your email">
+							  <div class="input-group-append">
+							    <button class="btn btn-subscribe">Subscribe</button>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="container bt-1">
+						<div class="row align-items-center justify-content-center justify-content-md-between py-4">
+							<div class="col-auto mb-4 mb-lg-0 fz-14 text-center text-lg-left">© 2020 Oman Startup Hub. All Rights Reserved.</div>
+							<div class="col-auto text-center">
+								<div class="row justify-content-center">
+									<div class="col-sm-auto mb-3 mb-sm-0">
+										<a href="#!">Accessibility</a>
+									</div>
+									<div class="col-sm-auto mb-3 mb-sm-0">
+										<a href="#!">Terms of Use</a>
+									</div>
+									<div class="col-sm-auto mb-3 mb-sm-0">
+										<a href="#!">Privacy Policy</a>
+									</div>
+									<div class="col-sm-auto mb-3 mb-sm-0">
+										<a href="#!">Disclaimer</a>
+									</div>
+								</div>				
+							</div>
+							<div class="col-auto mt-4 mt-md-0">
+								<div>
+									<a href="#!" class="contact-link fab fa-facebook-f"></a>
+									<a href="#!" class="contact-link fab fa-twitter"></a>
+									<a href="#!" class="contact-link fab fa-instagram"></a>
+									<a href="#!" class="contact-link fab fa-linkedin-in"></a>
+									<a href="#!" class="contact-link fab fa-youtube"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.js"></script>
+		<script src="https://unpkg.com/jarallax@1.10/dist/jarallax.min.js"></script>
+		<script src="https://unpkg.com/jarallax@1.10/dist/jarallax-video.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+		<script src="js/common.js"></script>
+
+	</body>
+</html>
