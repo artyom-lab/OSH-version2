@@ -21,42 +21,39 @@ img
 	height: auto
 
 a 
+	color: #71C9D9
 	text-decoration: none !important
 	transition: .3s
+	&:hover:not(.btn-my)
+		opacity: .7
+		color: #FF8080
 
 body 
 	font-family: 'Proxima-Nova', sans-serif
 	color: #181B31
 	display: flex
 	flex-direction: column
+	min-height: 100vh
 
 .bg-blue1 
 	background-color: #71C9D9 !important
-
 .bg-blue2 
 	background-color: #05385C !important
-
 .bg-pink 
 	background-color: #FF8080 !important
-
 .bg-gray 
 	background-color: #F8FAFC !important
 
 .blue 
 	color: #05385C
-
 .blue2
 	color: #71C9D9
-
 .pink 
 	color: #FF8080
-
 .gray 
 	color: #707070
-
 .green 
 	color: #2CB374
-
 .brown
 	color: #E69775
 
@@ -73,7 +70,6 @@ body
 	> [class*='col']
 		padding-left: 8px
 		padding-right: 8px
-
 @media (min-width: 1200px)
 	.row-2
 		margin-left: -22px
@@ -81,7 +77,6 @@ body
 		> [class*='col']
 			padding-left: 22px
 			padding-right: 22px
-
 .row-3
 	margin-left: -4px
 	margin-right: -4px
@@ -91,46 +86,28 @@ body
 
 .h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6
 	font-family: 'Titillium Web', sans-serif
-
+	font-weight: 600
+.h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6
+	font-weight: 600
+	color: #05385C
 .h1, h1
 	font-weight: bold
 	font-size: 48px
 	@media (max-width: 575.98px)
 		font-size: 40px
-
 .h2, h2
-	font-weight: 600
 	font-size: 45px
-	color: #05385C
 	@media (max-width: 575.98px)
 		font-size: 35px
-
 .h3, h3
-	font-weight: 600
 	font-size: 30px
-	color: #05385C
-
 .h4, h4
-	font-weight: 600
 	font-size: 24px
-	color: #05385C
-
 .h5, h5
-	font-weight: 600
 	font-size: 18px
-	color: #05385C
-
 .h6, h6
-	font-weight: 600
 	font-size: 16px
-	color: #05385C
 	margin-bottom: 0
-
-a
-	&.h6 
-		&:hover 
-			color: initial
-			opacity: .6
 
 .fz-0
 	font-size: 0px
@@ -178,166 +155,63 @@ a
 	border-radius: 3px
 
 .link-pink
-	font-size: 13px
+	font-size: 12px
 	font-weight: bold
 	font-family: 'Titillium Web', sans-serif
-	color: #FF8080
-	.arrow-pink 
-		transition: .3s
-	&:hover 
-		color: #FF8080
-		opacity: .6
-		.arrow-pink 
-			transform: translateX(5px)
-
-.link-pink-12
-	font-size: 12px
+	color: #FF8080 !important
 
 .link-blue
-	font-size: 12px
-	color: #71C9D9
-	&:hover 
-		color: #71C9D9
-
-.link-tag
-	display: inline-block
-	font-size: 12px
-	padding: 2px 10px
-	color: #05385C
-	background: #FFF
-	border-radius: 3px
-	margin-bottom: 8px
-	margin-right: 4px
-	&:hover 
-		color: #05385C
-		opacity: .6
-
-.btn-login
-	background: #FF8080
-	color: #FFF
-	font-family: 'Titillium Web', sans-serif
-	text-transform: uppercase 
-	font-size: 13px
-	font-weight: bold
-	border-radius: 100px
-	padding: 8px 24px
-	transition: .3s
-	&:focus 
-		box-shadow: none
-
-.btn-add 
-	text-transform: capitalize
-	&:hover 
-		color: #FFF
-		opacity: .8 
-
-.btn-follow
-	padding: 5px 28px
-
-.btn-following
-	background: #FFF
-	border: 1px solid #FF8080
-	color: #FF8080
-	padding: 5px 19px
-	&:hover 
-		background: #FF8080
-		color: #FFF
-		opacity: 1
-
-
-.btn-approval
-	color: #FFF
-	background: #2CB374
-	font-size: 12px
-	border-radius: 3px
-	padding: 2px 12px
-	transition: .3s
-	&:focus 
-		box-shadow: none
-	&:hover 
-		color: #FFF
-		opacity: .8
-
-.btn-pending
-	color: #05385C
-	background: #FFCD69
-	&:hover 
-		color: #05385C
-		opacity: .8
+	color: #71C9D9 !important
 
 .fixed-top
-	background: rgba(5, 56, 92, 0.5)
-	transition: transform .3s, margin-top .3s
+	color: #fff
+	font-size: 13px
+	font-family: 'Titillium Web', sans-serif
+	background: rgba(5, 56, 92, .5)
+	transition: .3s
+	@media (min-width: 992px)
+		&:not(.navbar-bg)
+			.navbar-bottom
+				padding-top: 16px
+				padding-bottom: 16px
 	.navbar 
-		padding-left: 0
-		padding-right: 0
-		transition: background-color .3s, padding-top .3s, padding-bottom .3s, border-bottom-color .3s
+		padding-left: 0 !important
+		padding-right: 0 !important
+		transition: padding-top .3s, padding-bottom .3s
 	.navbar-top
 		padding-top: 2px
 		padding-bottom: 2px
 		border-bottom: 1px solid
-		border-bottom-color: rgba(255, 255, 255, 0.2)
-		.navbar-nav 
-			.nav-link 
-				padding-left: 6px
-				padding-right: 6px
-	@media (min-width: 992px)
-		&:not(.navbar-bg)
-			color: #fff
-			.navbar-bottom
-				padding-top: 16px
-				padding-bottom: 16px
-				.navbar-nav 
-					.nav-link 
-						font-weight: 600
+		border-bottom-color: rgba(255, 255, 255, .2)
+	.navbar-bottom
+		.navbar-nav
+			padding-bottom: .5rem
+			@media (min-width: 1200px)
+				padding-bottom: 0
+				padding-right: 20px
+		.nav-link
+			font-weight: 600
 	.navbar-brand
 		max-width: 70%
 		position: relative
 		padding: 0
 		img
 			height: 40px
-			transition: .3s
-	a
-		&:not(.btn):not(:hover)
-			color: #FFF
-		&.contact-link
-			font-size: 12px
-			display: inline-block
-			margin-right: 16px
-		&:hover 
-			color: #FFF !important
-			opacity: .6
-		&.nav-link
-			font-size: 13px
-			font-family: 'Titillium Web', sans-serif
-			letter-spacing: 1px
-			position: relative
-			text-transform: uppercase
-			@media (min-width: 1200px)
-				padding-left: 10px !important
-				padding-right: 10px !important
-	.navbar-nav
-		padding-bottom: .5rem
-		@media (min-width: 992px)
-			padding-bottom: 0
-			padding-right: 20px
+	.contact-link
+		font-size: 12px
+		display: inline-block
+		margin-right: 16px
+	.nav-link
+		letter-spacing: 1px
+		text-transform: uppercase
+		display: block !important
+		@media (min-width: 1200px)
+			padding-left: 10px !important
+			padding-right: 10px !important
+	a 
+		color: inherit !important
 	&.navbar-bg
-		.navbar-top
-			background-color: #FFF
-			border-bottom-color: #EDEDED
-			a 
-				color: #ABABAB
-		.navbar-bottom
-			background-color: #fff
-			border-bottom: 1px solid
-			border-bottom-color: #EDEDED
-			@media (min-width: 1200px)
-				.fa-search 
-					color: #181B31
-				.navbar-nav 
-					.nav-link 
-						color: #181B31
-						font-weight: 600
+		background: #05385C
 	@media (max-width: 1199.98px)
 		#navbar
 			position: fixed
@@ -350,6 +224,10 @@ a
 			padding: 54px 15px
 			background-color: #05385C
 			transition: .3s
+			.nav-link
+				margin: 0 -15px 
+				padding-left: 15px
+				padding-right: 15px
 
 @media (max-width: 1199.98px)
 	.menubar-in
@@ -360,7 +238,6 @@ a
 .navbar-toggler
 	display: inline-block
 	cursor: pointer
-	transition: none
 	padding: 0
 	border: 0
 	width: 26px
@@ -387,7 +264,7 @@ a
 		animation-iteration-count: infinite
 		animation-duration: 3s
 		.navbar-bg &
-			border-top: 2px solid #000
+			border-top: 2px solid
 	&.active
 		&:before
 			transform: rotate(-45deg)
@@ -417,16 +294,13 @@ a
 .header 
 	overflow: hidden
 	color: #fff
+	padding-top: 114px
+	padding-bottom: 140px
+	@media (max-width: 575.98px)
+		padding-top: 98px
 	> .container
-		display: flex
-		flex-direction: column
-		padding-top: 100px
-		.my-auto
-			padding-top: 95px
-			padding-bottom: 235px
-			@media (max-width: 575.98px)
-				padding-top: 40px
-				padding-bottom: 202px
+		padding-top: 93px
+		padding-bottom: 94px
 
 .o-hidden
 	overflow: hidden
@@ -434,24 +308,34 @@ a
 main 
 	z-index: 2
 	position: relative
-	background: #FFF
+	background: #F1F4F8
 	overflow: hidden
 	flex-grow: 1
+	&.main-dashboard 
+		display: flex
+		border-bottom: 1px solid #DCDCDC
+		@media (max-width: 991.98px)
+			flex-wrap: wrap
 
-.btn-my
-	border-radius: 100px
-	padding: 11px 22px 11px 26px
-	border: none
-	font-family: 'Titillium Web', sans-serif
-	position: relative
-	font-weight: bold
-	text-transform: uppercase
-	box-shadow: none !important
+.btn
 	font-size: 14px
-	background: #FD8080
-	color: #FFF
+	font-family: 'Titillium Web', sans-serif
+	font-weight: bold
+	border-radius: 100px
+	position: relative
+	box-shadow: none !important
+	transition: .3s
+	text-transform: uppercase
 	span 
 		vertical-align: middle
+	&:hover:not(.btn-my)
+		opacity: .7
+
+.btn-my
+	padding: 11px 22px 11px 26px
+	border: none
+	background: #FD8080
+	color: #FFF !important
 	&:after 
 		content: ''
 		display: inline-block
@@ -461,56 +345,73 @@ main
 		background-size: cover
 		margin-left: 10px
 		vertical-align: middle
-		transition: .3s
 		background-image: url(../img/arrow-white.svg)
+		transition: .3s
 	&:hover 
-		color: #FFF
-		&:before 	
-			transform: none
+		background: #f98e8e
 		&:after 
 			transform: translateX(-5px)
 	&:active
 		&:after 
 			transform: translateX(5px)
 
+.btn-login
+	font-size: 13px
+	padding: 9px 25px
+	&:after 
+		display: none
+
+.btn-add 
+	text-transform: capitalize
+
+.link-line
+	position: relative
+	color: #FF8080 !important
+	display: inline-block
+	padding: 4px 0
+	font-size: 14px
+	font-weight: bold
+	font-family: 'Titillium Web', sans-serif
+	&:after 
+		content: ""
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 0
+		border-bottom: 1px solid
+		transition: .3s
+	&:hover
+		&:after 
+			width: 100%
+
 .section-1
+	position: relative
+	background-color: #fff
+	padding-top: 1px
+	padding-bottom: 50px
 	.container
-		margin-top: -140px
+		margin-top: -141px
 		.img
 			position: absolute
-			width: 600px
-			top: 300px
-			left: 75%
+			height: 780px
+			top: -251px
+			right: 0
 			@media (max-width: 991.98px)
 				display: none
 		.card-1 
 			height: 100%
 			padding: 32px
 			border-radius: 0 !important
-			box-shadow: 0 3px 6px rgba(0, 0, 0, .16)
+			box-shadow: 10px 10px 24px rgba(0, 0, 0, .1)
 			transition: .3s
+			border: 0
 			&:hover 
-				box-shadow: 0 25px 70px rgba(0,0,0,.07)
+				box-shadow: 2px 2px 10px rgba(0, 0, 0, .2)
 		.card-2
 			height: 100%
 			padding: 30px
 			border: 0
 			position: relative
-			a 
-				position: relative
-				&:after 
-					content: ""
-					position: absolute
-					bottom: -4px
-					left: 0px
-					width: 0
-					border-bottom: 1px solid #FF8080
-					transition: 0.3s
-				&:hover 
-					color: #FF8080
-					opacity: .6
-					&:after 
-						width: 100%
 		[class^="col"]
 			&:not(:last-child)
 				.card-2
@@ -534,42 +435,27 @@ main
 	a 
 		color: #181B31
 		font-size: 14px
-		&:hover 
-			opacity: .6
 	.input-group 
 		height: 44px
 		.form-control 
 			font-size: 14px
 			height: 44px
-			background: #FFF
 			border-top-left-radius: 100px
 			border-bottom-left-radius: 100px
 			border-right: 0
+			padding-left: 19px
+			padding-right: 19px
 			&:focus 
 				box-shadow: none
 				border-color: #ced4da
 		.btn-subscribe
-			font-size: 14px
-			font-weight: bold
 			background: #FFF
 			border-color: #ced4da
-			font-family: 'Titillium Web', sans-serif
 			color: #FF8080
-			border-top-right-radius: 100px
-			border-bottom-right-radius: 100px
 			border-left: 0
-			transition: .3s
-			&:hover 
-				opacity: .6
-			&:focus 
-				box-shadow: none
-		.input-group-prepend
-			span 
-				&.btn 
-					border: 1px solid #ced4da
-
-.footer-bottom 
-	background: #FFF
+			padding-left: 19px
+			padding-right: 19px
+.footer-bottom
 	color: #797676
 	margin-top: 24px
 	a 
@@ -577,46 +463,8 @@ main
 		&.contact-link
 			font-size: 12px
 			display: inline-block
-			margin-right: 12px
-
-.owl-carousel
-	.owl-stage-outer
-		cursor: ew-resize
-	.owl-dots
-		font-size: 0
-		.owl-dot
-			vertical-align: middle
-			span 
-				background: transparent !important
-				margin: 0
-				height: 0
-				border-bottom: 3px solid #ABABAB
-				transition: .3s
-				border-radius: 0
-				&:hover 	
-					border-bottom-color: #FF8080
-			&.active
-				span 
-					border-bottom-color: #FF8080
-	.owl-nav 
-		margin: 0 -12px
-		[class*=owl-]
-			background: transparent !important
-			padding: 0
-			margin: 0
-			border-radius: 0
-			vertical-align: middle
-		.owl-prev, .owl-next 
-			width: 11px 
-			height: 19px
-			background-image: url(../img/arrow-left.svg) !important
-			background-size: cover
-			margin: 0 12px
-			transition: .3s
-			&:not(.disabled):hover 
-				opacity: .8
-		.owl-next
-			transform: rotate(180deg)
+			&:not(:last-child)
+				margin-right: 12px
 
 .section-2 
 	background: #F4F5F8
@@ -626,6 +474,8 @@ main
 		background: #F4F5F8
 		position: relative
 		z-index: 10
+		@media (min-width: 1200px)
+			margin-bottom: -55px
 		.nav-link 
 			font-family: 'Titillium Web', sans-serif
 			font-weight: 600
@@ -640,88 +490,79 @@ main
 			line-height: 1
 			span 
 				border-bottom: 2px solid transparent
-			&:hover 
-				opacity: .6
 			&.active 
 				font-weight: 600
 				color: #FF8080
 				span 
 					border-bottom: 2px solid #FF8080
 
-.owl-1
+.block
+	padding: 30px 0
 	@media (min-width: 1200px)
-		margin-top: -55px
-	.owl-item img
-		width: auto
-	.owl-dots 
+		padding: 50px 0
+	.info
+		color: #fff
+		font-size: 10px
+		font-weight: bold
+		font-family: 'Titillium Web', sans-serif
+		display: inline-block
+		text-transform: uppercase
+		padding: 4.5px 12px
+		border-radius: 100px
+		background: #71C9D9
+		margin-bottom: 24px
+
+.owl-carousel
+	.owl-stage-outer
+		cursor: ew-resize
+	.owl-dots
+		font-size: 0
 		bottom: 0
-		position: absolute
-		margin: 0 -12.5px !important
-		left: 0
+		margin: 0 -7.5px
+		margin-top: 30px !important
 		z-index: 10
-		@media (max-width: 991.98px)
-			right: 0
-			left: auto
-		@media (max-width: 767.98px)
-			bottom: -4%
-		.owl-dot
-			margin: 0 12.5px
-			span
-				width: 28px
-	.block
-		margin-top: 100px
-		@media (max-width: 1199.98px)
-			margin-top: 30px
-		@media (max-width: 991.98px)
-			margin-top: 10px
-		@media (max-width: 767.98px)
-			margin-top: 30px
-		.slide
-			position: relative
-			padding: 24px 0 20px
-			@media (max-width: 991.98px)
-				padding: 30px 0 20px
-			@media (max-width: 767.98px)
-				padding: 20px 0 20px
-		.info
+		@media (min-width: 768px)
 			position: absolute
-			color: #fff
-			font-size: 10px
-			font-weight: bold
-			text-transform: uppercase
-			padding: 4.5px 12px
-			min-width: 110px
-			text-align: center
-			border-radius: 100px
-			background: #71C9D9
-			font-family: 'Titillium Web', sans-serif
-			@media (min-width: 992px)
-				margin-top: -27px
-			@media (max-width: 767.98px)
-				margin-top: -27px
+		.owl-dot
+			vertical-align: bottom
+			padding: 0 7.5px !important
+			span 
+				width: 30px
+				background: transparent !important
+				margin: 0
+				height: 0
+				border-bottom: 2px solid #DADBDD
+				transition: .3s
+				border-radius: 0
+				&:hover 	
+					border-bottom-color: #FF8080
+			&.active
+				span
+					border-bottom: 4px solid #FF8080
 
 .owl-2
-	margin-top: 0
 	.owl-dots 
-		margin: 0 -5.5px !important
-		left: 52%
-		@media (max-width: 767.98px)
-			bottom: 8px
-			left: 0
+		margin: 0 -5px
+		left: calc(50% + 15px)
+		margin-top: 0 !important
 		.owl-dot
-			margin: 0 5.5px
+			padding: 0 5px !important
 			span
 				width: 20px
+			&.active
+				span
+					border-bottom-width: 3px
 
 .owl-3
 	position: static
-	.owl-dots 
-		margin: 0 -12.5px !important
+	.owl-dots
+		position: absolute
 		left: 30px
 		bottom: 40px
-		right: auto
-		margin: 0 -5.5px !important
 		@media (max-width: 1399.98px)
+			left: 20px
+			bottom: 30px
+		@media (max-width: 1199.98px)
 			left: 15px
 			bottom: 25px
 
@@ -734,30 +575,34 @@ main
 		border-radius: 100px
 		font-size: 10px
 		padding: 4px 20px
+		background-color: #fff
+		+ span 
+			margin-left: 4px
+
+.img-transform
+	display: block
+	overflow: hidden
+	img 
+		display: block
+		width: 100%
+		transition: .3s
+	&:hover 
+		img 	
+			transform: scale(1.1)
 
 // DASHBOARD
 
 .body-dashboard
-	min-height: 100vh
 	transition: .3s
 	padding-top: 80px
+	@media (max-width: 575.98px)
+		padding-top: 60px
 	&.menubar-1
-		@media (min-width: 1200px)
-			padding-left: 0
-			.sidebar-1
-				margin-left: -280px
-				@media (max-width: 575.98px)
-					margin-left: -260px
 		@media (max-width: 1199.98px)
 			overflow: hidden
 			transform: translateX(280px)
 		@media (max-width: 575.98px)
 			transform: translateX(260px)
-	@media (max-width: 575.98px)
-		padding-top: 60px
-
-.sidebar-1, .navbar, .content
-	transition: .3s
 
 .sidebar-1
 	width: 280px
@@ -768,41 +613,42 @@ main
 	display: flex
 	flex-direction: column
 	z-index: 1020
+	overflow: auto
+	background: #FFF
+	box-shadow: 5px 4px 15px rgba(215, 220, 227, .5)
+	&::-webkit-scrollbar
+		display: none
 	@media (max-width: 1199.98px)
 		position: fixed
-		max-height: 100vh
+		max-height: calc(100vh - 80px)
 		left: auto
 		right: 100%
 	@media (max-width: 575.98px)
 		top: 60px
 		width: 260px
 		min-width: 260px
-	.sidebar-bottom
-		flex-grow: 1
-		overflow: auto
-		background: #FFF
-		box-shadow: 5px 4px 15px rgba(215, 220, 227, .5)
-		&::-webkit-scrollbar
-			display: none
-		.accordion-wrap
-			padding: 0 24px 72px
-			.accordion-links 
-				display: inline-block
-				font-family: 'Titillium Web', sans-serif
-				color: #05385C
-				overflow: hidden
-				font-size: 14px
-				font-weight: 600
-				padding: 4px 0
-				transition: .3s
+		max-height: calc(100vh - 60px)
+	.accordion-wrap
+		padding: 0 24px 72px
+		.accordion-links 
+			display: inline-block
+			font-family: 'Titillium Web', sans-serif
+			color: #05385C
+			overflow: hidden
+			font-size: 14px
+			font-weight: 600
+			margin: 0 -24px
+			padding: 4px 24px
+			transition: .3s
+			display: block
+			svg 
+				rect, path 
+					transition: .3s
+			&:hover, &.active 
+				color: #FF8080
 				svg 
-					rect, path 
-						transition: .3s
-				&:hover, &.active 
-					color: #FF8080
-					svg 
-						rect, path
-							fill: #FF8080
+					rect, path
+						fill: #FF8080
 
 .sidebar-top
 	background: #05385C
@@ -847,8 +693,7 @@ main
 
 .navbar-dashboard
 	padding: 0
-	color: #FFF
-	background: #05385C !important
+	background: #05385C
 	@media (max-width: 1199.98px)
 		position: absolute
 		padding-right: 30px
@@ -923,7 +768,7 @@ main
 		&:after
 			transform: translateX(3px) translateY(1px) rotate(-45deg)
 	&:hover 
-		opacity: .8
+		opacity: .7
 #sandwich-1
 	&.active
 		color: initial
@@ -964,52 +809,36 @@ main
 	@media (max-width: 1199.98px)
 		padding: 15px
 
-.main-dashboard 
-	display: flex
-	background: #F1F4F8
-	border-bottom: 1px solid #DCDCDC
-	flex-grow: 1
-	flex-wrap: wrap
-
 .dropdown-1 
 	.dropdown-toggle 
 		&:after 
 			display: none
 	.dropdown-menu
 		margin-top: 0
-		top: 200%
 		left: 0
+		color: inherit
 		background: #05385C
 		min-width: auto
-		@media (max-width: 575.98px)
-			top: 160%
+		border: 0
+		border-radius: 0 0 4px 4px
+		display: block
+		transition: .3s
+		top: 100%
+		opacity: 0
+		pointer-events: none
+		&.show
+			top: 200%
+			opacity: 1
+			pointer-events: inherit
+			@media (max-width: 575.98px)
+				top: 160%
 		.dropdown-item
 			font-size: 13px
 			font-weight: 600
 			padding: 4px 16px
 			font-family: 'Titillium Web', sans-serif
 			text-transform: uppercase
-			&:hover, &:active, &:focus
-				background: #05385C
-				opacity: .6
-				color: #FFF
-
-.three-points 
-	display: inline-block
-	font-size: 14px
-	color: #000
-	border-radius: 100px
-	height: 31px
-	line-height: 31px
-	width: 31px
-	text-align: center
-	background: #FFF
-	transform: rotate(90deg)
-	.bg-img &
-		position: absolute
-		right: 10px
-		top: 10px
-		background: rgba(255, 255, 255, 0.5)
+			background: #05385C !important
 
 .cart-events
 	color: #05385C
@@ -1020,7 +849,7 @@ main
 	background: #F8FAFC
 	overflow: hidden
 	.block-events
-		padding: 24px 16px
+		padding: 24px 16px 12px
 		display: flex
 		flex-direction: column
 		flex-grow: 1
@@ -1047,21 +876,25 @@ main
 .bg-cross-pink
 	background-image: url(../img/cross2.svg)
 
-.link-share
+.link-circle
 	display: inline-block
-	width: 31px
-	height: 31px
 	border-radius: 100px
-	background: #FFF
-	border: 1px solid #DADBDD
-	position: relative
-	&:hover 
-		opacity: .6
-	img
-		position: absolute
-		top: 50%
-		left: 50%
-		transform: translate(-60%, -50%)
+	height: 31px
+	width: 31px
+	background-color: #FFF 
+	background-repeat: no-repeat
+	background-position: center center
+	&.three-points
+		background-image: url(../img/points.svg)
+		.bg-img &, .img-transform &
+			position: absolute
+			right: 10px
+			top: 10px
+			background-color: rgba(255, 255, 255, 0.5)
+	&.link-share
+		background-image: url(../img/share.svg)
+		background-position: 45% center
+		border: 1px solid #DADBDD
 
 .bg-img 
 	background-size: cover
@@ -1078,11 +911,6 @@ main
 
 .bg-img6 
 	width: 40px
-
-.bg-img-owl
-	height: 100%
-	@media (max-width: 767.98px)
-		height: 300px
 
 .aside-2
 	width: 320px

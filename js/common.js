@@ -6,11 +6,11 @@ $(document).ready(function () {
 	});
 
 	function navbar() {
-	if ($(this).scrollTop() >= 1) {
-		$('.fixed-top').addClass("navbar-bg");
-	} else {
-		$('.fixed-top').removeClass("navbar-bg");
-	};
+		if ($(this).scrollTop() >= 1) {
+			$('.fixed-top').addClass("navbar-bg");
+		} else {
+			$('.fixed-top').removeClass("navbar-bg");
+		};
 	};
 	navbar();
 	$(window).on("scroll", navbar);
@@ -20,7 +20,8 @@ $(document).ready(function () {
 		disable: 'mobile'
 	});
 
-  Waves.attach('.btn', ['waves-light']);
+  Waves.attach('.btn, .link-circle, .accordion-links, .demopills span, .info');
+  Waves.attach('.navbar-bottom .nav-link, .navbar-dashboard .nav-link, .img-transform, .bg-img', ['waves-light']);
   Waves.init();
 
 	function footer() {
@@ -34,19 +35,14 @@ $(document).ready(function () {
     items: 1,
     smartSpeed: 1000,
     loop: true,
-    autoplay: true,
+    // autoplay: true,
     margin: 20
   });
 
 	$("#sandwich-1").on("click", function(){
 		$(this).toggleClass("active");
-		$(".body-dashboard").toggleClass("menubar-1");
+		$("body").toggleClass("menubar-1");
 		window.dispatchEvent(new Event('resize'));
-	});
-
-	$("#sandwich-2").on("click", function(){
-		$(this).toggleClass("active");
-		$(".body-dashboard").toggleClass("menubar-2");
 	});
 
   $(document).on('click.bs.dropdown.data-api', '.dropdown-menu', function (e) { 
