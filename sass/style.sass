@@ -27,18 +27,20 @@ a
 body 
 	font-family: 'Proxima-Nova', sans-serif
 	color: #181B31
+	display: flex
+	flex-direction: column
 
 .bg-blue1 
-	background: #71C9D9
+	background-color: #71C9D9 !important
 
 .bg-blue2 
-	background: #05385C
+	background-color: #05385C !important
 
 .bg-pink 
-	background: #FF8080
+	background-color: #FF8080 !important
 
 .bg-gray 
-	background: #F8FAFC
+	background-color: #F8FAFC !important
 
 .blue 
 	color: #05385C
@@ -51,6 +53,12 @@ body
 
 .gray 
 	color: #707070
+
+.green 
+	color: #2CB374
+
+.brown
+	color: #E69775
 
 .container 
 	@media (min-width: 1200px)
@@ -73,6 +81,13 @@ body
 		> [class*='col']
 			padding-left: 22px
 			padding-right: 22px
+
+.row-3
+	margin-left: -4px
+	margin-right: -4px
+	> [class*='col']
+		padding-left: 4px
+		padding-right: 4px
 
 .h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6
 	font-family: 'Titillium Web', sans-serif
@@ -103,8 +118,7 @@ body
 .h5, h5
 	font-weight: 600
 	font-size: 18px
-	color: #181B31
-	opacity: .3
+	color: #05385C
 
 .h6, h6
 	font-weight: 600
@@ -158,6 +172,9 @@ a
 .bt-1
 	border-top: 1px solid #ced4da
 
+.border-3
+	border-radius: 3px
+
 .link-pink
 	font-size: 13px
 	font-weight: bold
@@ -170,6 +187,15 @@ a
 		opacity: .6
 		.arrow-pink 
 			transform: translateX(5px)
+
+.link-pink-12
+	font-size: 12px
+
+.link-blue
+	font-size: 12px
+	color: #71C9D9
+	&:hover 
+		color: #71C9D9
 
 .link-tag
 	display: inline-block
@@ -408,6 +434,7 @@ main
 	position: relative
 	background: #FFF
 	overflow: hidden
+	flex-grow: 1
 
 .btn-my
 	border-radius: 100px
@@ -619,26 +646,26 @@ main
 				span 
 					border-bottom: 2px solid #FF8080
 
-	.owl-1
-		@media (min-width: 1200px)
-			margin-top: -55px
-		.owl-item img
-			width: auto
-		.owl-dots 
-			bottom: 0
-			position: absolute
-			margin: 0 -12.5px !important
-			left: 0
-			z-index: 10
-			@media (max-width: 991.98px)
-				right: 0
-				left: auto
-			@media (max-width: 767.98px)
-				bottom: -4%
-			.owl-dot
-				margin: 0 12.5px
-				span
-					width: 28px
+.owl-1
+	@media (min-width: 1200px)
+		margin-top: -55px
+	.owl-item img
+		width: auto
+	.owl-dots 
+		bottom: 0
+		position: absolute
+		margin: 0 -12.5px !important
+		left: 0
+		z-index: 10
+		@media (max-width: 991.98px)
+			right: 0
+			left: auto
+		@media (max-width: 767.98px)
+			bottom: -4%
+		.owl-dot
+			margin: 0 12.5px
+			span
+				width: 28px
 	.block
 		margin-top: 100px
 		@media (max-width: 1199.98px)
@@ -671,6 +698,28 @@ main
 			@media (max-width: 767.98px)
 				margin-top: -27px
 
+.owl-2
+	margin-top: 0
+	.owl-dots 
+		margin: 0 -12.5px !important
+		left: 52%
+		// @media (max-width: 991.98px)
+		// 	right: 0
+		// 	left: auto
+		// @media (max-width: 767.98px)
+		// 	bottom: -4%
+		.owl-dot
+			margin: 0 5.5px
+			span
+				width: 20px
+
+.owl-3
+	.owl-dots 
+		margin: 0 -12.5px !important
+		left: 0
+		bottom: -16px
+		margin: 0 -5.5px !important
+
 .demopills 
 	span 
 		display: inline-block
@@ -681,8 +730,8 @@ main
 		font-size: 10px
 		padding: 4px 20px
 
-// DASHBOARD
 
+// DASHBOARD
 
 
 .body-dashboard
@@ -693,9 +742,13 @@ main
 		@media (min-width: 1200px)
 			padding-left: 0
 			.sidebar-1
-				margin-left: -260px
+				margin-left: -280px
+				@media (max-width: 575.98px)
+					margin-left: -260px
 		@media (max-width: 1199.98px)
 			overflow: hidden
+			transform: translateX(280px)
+		@media (max-width: 575.98px)
 			transform: translateX(260px)
 	@media (max-width: 575.98px)
 		padding-top: 60px
@@ -704,8 +757,8 @@ main
 	transition: .3s
 
 .sidebar-1
-	width: 260px
-	min-width: 260px
+	width: 280px
+	min-width: 280px
 	top: 80px
 	bottom: 0
 	left: 0
@@ -717,6 +770,10 @@ main
 		max-height: 100vh
 		left: auto
 		right: 100%
+	@media (max-width: 575.98px)
+		top: 60px
+		width: 260px
+		min-width: 260px
 	.sidebar-bottom
 		flex-grow: 1
 		overflow: auto
@@ -725,21 +782,20 @@ main
 		&::-webkit-scrollbar
 			display: none
 		.accordion-wrap
-			padding: 36px 0 72px
+			padding: 0 24px 72px
 			.accordion-links 
-				display: block
+				display: inline-block
 				font-family: 'Titillium Web', sans-serif
 				color: #05385C
 				overflow: hidden
 				font-size: 14px
 				font-weight: 600
-				padding: 14px 0
+				padding: 4px 0
 				transition: .3s
-				border-left: 4px solid transparent
-				&:hover, &.active
-					background: #F1F4F8
-				&.active 
-					border-left: 4px solid #FF8080
+				svg 
+					rect, path 
+						transition: .3s
+				&:hover, &.active 
 					color: #FF8080
 					svg 
 						rect, path
@@ -748,31 +804,35 @@ main
 .sidebar-top
 	background: #05385C
 	padding: 20px 30px
-	width: 260px
+	width: 280px
 	transition: .3s
 	@media (max-width: 1199.98px)
-		margin-left: -260px
+		margin-left: -280px
 	@media (max-width: 575.98px)
+		width: 260px
 		margin-left: -260px
 		padding: 10px 30px
 
 .art
 	display: flex
 	margin-left: auto
-	padding: 10px 20px 
+	padding: 10px 20px 10px 10px 
 	@media (max-width: 575.98px)
 		padding: 10px 15px
 
-.px-26
-	padding-left: 26px
-	padding-right: 26px
-
 .content
 	padding: 42px 50px 0
+	flex-wrap: wrap
 	@media (max-width: 1199.98px)
 		padding: 30px 30px 0
 	@media (max-width: 767.98px)
 		padding: 15px 15px 0
+
+.content-2
+	padding: 42px 25px 0
+	max-width: calc(100vw - 280px - 320px)
+	@media (max-width: 1199.98px)
+		padding: 30px 20px 0
 
 .navbar-dashboard
 	padding: 0
@@ -820,7 +880,7 @@ main
 		width: 7px
 		height: 7px
 		border-radius: 100px
-		background: #71C9D9
+		background: #74D971
 		right: 0
 		top: -9px
 
@@ -865,14 +925,6 @@ main
 #sandwich-2
 	@media (min-width: 1440px)
 		display: none
-
-// .block-dashboard
-// 	padding: 15px
-// 	+ .block-dashboard 
-// 		border-top: 1px solid #DEDEDE
-// 	.block-dashboard 
-// 		padding-left: 0
-// 		padding-right: 0
 
 .scroll-wrap
 	flex-grow: 1
@@ -925,13 +977,6 @@ main
 		height: calc(100% - 15px)
 	.block-dashboard 
 		padding: 5px 15px 15px 
-		// .block-dashboard
-		// 	padding-left: 15px
-		// 	padding-right: 0
-		// &:not(.scroll-wrap)
-		// 	padding-right: 0
-		// 	.block-dashboard
-		// 		padding-right: 15px
 
 .cart-2
 	@media (min-width: 992px)
@@ -955,6 +1000,7 @@ main
 	display: flex
 	background: #F1F4F8
 	border-bottom: 1px solid #DCDCDC
+	flex-grow: 1
 
 .dropdown-1 
 	.dropdown-toggle 
@@ -1033,6 +1079,44 @@ main
 		flex-direction: column
 		flex-grow: 1
 
+.bg-icons
+	display: inline-block
+	background-size: cover
+	background-position: center center
+	width: 14px
+	height: 14px
+
+.bg-calendar
+	background-image: url(../img/calendar.svg)
+
+.bg-time
+	background-image: url(../img/time.svg)
+
+.bg-location
+	background-image: url(../img/location.svg)
+
+.bg-cross-white
+	background-image: url(../img/cross.svg)
+
+.bg-cross-pink
+	background-image: url(../img/cross2.svg)
+
+.link-share
+	display: inline-block
+	width: 31px
+	height: 31px
+	border-radius: 100px
+	background: #FFF
+	border: 1px solid #DADBDD
+	position: relative
+	&:hover 
+		opacity: .6
+	img
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+
 .bg-img 
 	background-size: cover
 	background-position: center center
@@ -1053,6 +1137,12 @@ main
 	border-radius: 3px
 	display: inline-block
 
+.bg-img5 
+	width: 38px
+
+.bg-img6 
+	width: 40px
+
 .cart-news
 	color: #05385C
 	border-radius: 3px
@@ -1062,3 +1152,37 @@ main
 		padding: 24px 24px 16px 24px
 		@media (max-width: 767.98px)
 			padding: 24px 16px
+
+
+// DASHBOARD-2
+
+
+.main-content
+	display: flex
+	flex-grow: 1
+
+.aside-2
+	width: 320px
+	min-width: 320px
+	background-color: #fff
+	box-shadow: 5px 4px 15px rgba(215, 220, 227, 0.5)
+	padding: 4px
+	padding-bottom: 72px
+
+.sidebar-head 
+	padding: 24px
+
+.chart-number 
+	position: absolute
+	color: #FFF
+	font-size: 14px
+	font-weight: 600
+	font-family: 'Titillium Web', sans-serif
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+
+.long-word 
+	white-space: nowrap !important
+	text-overflow: ellipsis
+	overflow: hidden

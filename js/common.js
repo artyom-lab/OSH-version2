@@ -34,13 +34,8 @@ $(document).ready(function () {
     items: 1,
     smartSpeed: 1000,
     loop: true,
-    autoplay: true,
+    // autoplay: true,
     margin: 20
-  });
-
-  $(".owl-2").owlCarousel({
-    items: 1,
-    smartSpeed: 1000,
   });
 
 	$("#sandwich-1").on("click", function(){
