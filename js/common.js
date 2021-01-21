@@ -34,7 +34,7 @@ $(document).ready(function () {
     items: 1,
     smartSpeed: 1000,
     loop: true,
-    // autoplay: true,
+    autoplay: true,
     margin: 20
   });
 

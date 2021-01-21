@@ -161,6 +161,9 @@ a.h6:hover {
 
 .fz-36 {
   font-size: 36px; }
+  @media (max-width: 1399.98px) {
+    .fz-36 {
+      font-size: 30px; } }
 
 .fz-40 {
   font-size: 40px; }
@@ -708,18 +711,29 @@ main {
 .owl-2 {
   margin-top: 0; }
   .owl-2 .owl-dots {
-    margin: 0 -12.5px !important;
+    margin: 0 -5.5px !important;
     left: 52%; }
+    @media (max-width: 767.98px) {
+      .owl-2 .owl-dots {
+        bottom: 8px;
+        left: 0; } }
     .owl-2 .owl-dots .owl-dot {
       margin: 0 5.5px; }
       .owl-2 .owl-dots .owl-dot span {
         width: 20px; }
 
-.owl-3 .owl-dots {
-  margin: 0 -12.5px !important;
-  left: 0;
-  bottom: -16px;
-  margin: 0 -5.5px !important; }
+.owl-3 {
+  position: static; }
+  .owl-3 .owl-dots {
+    margin: 0 -12.5px !important;
+    left: 30px;
+    bottom: 40px;
+    right: auto;
+    margin: 0 -5.5px !important; }
+    @media (max-width: 1399.98px) {
+      .owl-3 .owl-dots {
+        left: 15px;
+        bottom: 25px; } }
 
 .demopills span {
   display: inline-block;
@@ -754,7 +768,7 @@ main {
     .body-dashboard {
       padding-top: 60px; } }
 
-.sidebar-1, .navbar, .content, .sidebar-2 {
+.sidebar-1, .navbar, .content {
   transition: 0.3s; }
 
 .sidebar-1 {
@@ -836,10 +850,22 @@ main {
 
 .content-2 {
   padding: 42px 25px 0;
-  max-width: calc(100vw - 280px - 320px); }
+  max-width: 100%; }
   @media (max-width: 1199.98px) {
     .content-2 {
       padding: 30px 20px 0; } }
+  @media (max-width: 991.98px) {
+    .content-2 {
+      padding: 30px 15px 0; } }
+  @media (min-width: 992px) {
+    .content-2 {
+      max-width: calc(100% - 280px); } }
+  @media (min-width: 1200px) {
+    .content-2 {
+      max-width: calc(100% - 280px - 280px); } }
+  @media (min-width: 1400px) {
+    .content-2 {
+      max-width: calc(100% - 280px - 320px); } }
 
 .navbar-dashboard {
   padding: 0;
@@ -934,52 +960,6 @@ main {
   #sandwich-1 {
     transform: translateX(75px) !important; } }
 
-@media (min-width: 1440px) {
-  #sandwich-2 {
-    display: none; } }
-
-.scroll-wrap {
-  flex-grow: 1;
-  flex-basis: 0;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  min-height: 110px; }
-  @media (max-width: 991.98px) {
-    .scroll-wrap {
-      min-height: 330px; } }
-  @media (max-width: 575.98px) {
-    .scroll-wrap {
-      min-height: 355px; } }
-
-.scroll-wrap-2 {
-  min-height: 420px; }
-  @media (max-width: 575.98px) {
-    .scroll-wrap-2 {
-      min-height: 800px; } }
-
-.scroll-wrap-3 {
-  min-height: 420px; }
-  @media (max-width: 575.98px) {
-    .scroll-wrap-3 {
-      min-height: 460px; } }
-
-.scroll {
-  height: 100%;
-  overflow: auto;
-  flex-grow: 1;
-  padding-left: 15px;
-  padding-right: 15px; }
-  .scroll::-webkit-scrollbar {
-    width: 4px;
-    height: 4px; }
-  .scroll::-webkit-scrollbar-track {
-    background-color: transparent;
-    border-radius: 2px; }
-  .scroll::-webkit-scrollbar-thumb {
-    background-color: #F1F1F6;
-    border-radius: 2px; }
-
 .cart {
   display: flex;
   flex-direction: column;
@@ -995,31 +975,31 @@ main {
   .cart .block-dashboard {
     padding: 5px 15px 15px; }
 
-@media (min-width: 992px) {
-  .cart-2 {
-    margin-bottom: 20px;
-    height: calc(100% - 20px); } }
+.cart-2 {
+  margin-bottom: 20px;
+  height: calc(100% - 20px); }
 
 .cart-content {
   padding: 20px; }
   @media (max-width: 991.98px) {
     .cart-content {
-      padding: 15px; } }
+      padding: 30px 15px; } }
 
 .cart-content-2 {
   padding: 30px; }
-  @media (max-width: 991.98px) {
+  @media (max-width: 1399.98px) {
+    .cart-content-2 {
+      padding: 20px; } }
+  @media (max-width: 1199.98px) {
     .cart-content-2 {
       padding: 15px; } }
-
-.cart-content-3 {
-  padding: 30px; }
 
 .main-dashboard {
   display: flex;
   background: #F1F4F8;
   border-bottom: 1px solid #DCDCDC;
-  flex-grow: 1; }
+  flex-grow: 1;
+  flex-wrap: wrap; }
 
 .dropdown-1 .dropdown-toggle:after {
   display: none; }
@@ -1042,28 +1022,6 @@ main {
       background: #05385C;
       opacity: 0.6;
       color: #FFF; }
-
-.nav-dashboard .nav-link {
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 15px;
-  padding-right: 15px;
-  color: #05385C;
-  opacity: 0.5;
-  display: inline-block;
-  transition: 0.3s;
-  line-height: 1; }
-  .nav-dashboard .nav-link span {
-    border-bottom: 2px solid transparent; }
-  .nav-dashboard .nav-link:hover {
-    opacity: 1; }
-  .nav-dashboard .nav-link.active {
-    opacity: 1; }
-    .nav-dashboard .nav-link.active span {
-      border-bottom: 2px solid #05385C; }
 
 .three-points {
   display: inline-block;
@@ -1132,22 +1090,11 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-60%, -50%); }
 
 .bg-img {
   background-size: cover;
   background-position: center center; }
-
-.bg-img2 {
-  height: 100%; }
-  @media (max-width: 767.98px) {
-    .bg-img2 {
-      height: 186px; } }
-
-.bg-img3 {
-  width: 60px;
-  overflow: hidden;
-  border-radius: 3px; }
 
 .bg-img4 {
   width: 48px;
@@ -1161,20 +1108,11 @@ main {
 .bg-img6 {
   width: 40px; }
 
-.cart-news {
-  color: #05385C;
-  border-radius: 3px;
-  background: #F8FAFC;
-  overflow: hidden; }
-  .cart-news .block-news {
-    padding: 24px 24px 16px 24px; }
-    @media (max-width: 767.98px) {
-      .cart-news .block-news {
-        padding: 24px 16px; } }
-
-.main-content {
-  display: flex;
-  flex-grow: 1; }
+.bg-img-owl {
+  height: 100%; }
+  @media (max-width: 767.98px) {
+    .bg-img-owl {
+      height: 300px; } }
 
 .aside-2 {
   width: 320px;
@@ -1182,10 +1120,18 @@ main {
   background-color: #fff;
   box-shadow: 5px 4px 15px rgba(215, 220, 227, 0.5);
   padding: 4px;
-  padding-bottom: 72px; }
-
-.sidebar-head {
-  padding: 24px; }
+  padding-bottom: 36px; }
+  @media (max-width: 1399.98px) {
+    .aside-2 {
+      width: 280px;
+      min-width: 280px; } }
+  @media (max-width: 991.98px) {
+    .aside-2 {
+      width: 100%;
+      min-width: 100%;
+      background-color: transparent;
+      box-shadow: none;
+      padding: 0 15px; } }
 
 .chart-number {
   position: absolute;
