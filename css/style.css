@@ -1284,6 +1284,7 @@ main.main-dashboard {
 }
 
 .dropdown-1 .dropdown-menu .dropdown-item {
+  display: block;
   font-size: 13px;
   font-weight: 600;
   padding: 4px 16px;

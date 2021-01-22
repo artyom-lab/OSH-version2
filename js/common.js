@@ -21,7 +21,7 @@ $(document).ready(function () {
 	});
 
   Waves.attach('.btn, .link-circle, .accordion-links, .demopills span, .info');
-  Waves.attach('.navbar-bottom .nav-link, .navbar-dashboard .nav-link, .img-transform, .bg-img', ['waves-light']);
+  Waves.attach('#navbar .nav-link, .img-transform, .bg-img, .dropdown-item', ['waves-light']);
   Waves.init();
 
 	function footer() {
