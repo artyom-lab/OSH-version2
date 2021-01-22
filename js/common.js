@@ -35,7 +35,7 @@ $(document).ready(function () {
     items: 1,
     smartSpeed: 1000,
     loop: true,
-    // autoplay: true,
+    autoplay: true,
     margin: 20
   });
 
@@ -48,5 +48,15 @@ $(document).ready(function () {
   $(document).on('click.bs.dropdown.data-api', '.dropdown-menu', function (e) { 
     e.stopPropagation();
   });
+
+	$("#step-2").on("click", function(){
+		$(".progress-wrapper").addClass("step-2-active");
+	});
+	$("#step-3").on("click", function(){
+		$(".progress-wrapper").addClass("step-3-active");
+	});
+	$("#step-4").on("click", function(){
+		$(".progress-wrapper").addClass("step-4-active");
+	});
 
 });

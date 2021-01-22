@@ -205,6 +205,8 @@ body
 		letter-spacing: 1px
 		text-transform: uppercase
 		display: block !important
+		&.active 
+			color: #FF8080 !important
 		@media (min-width: 1200px)
 			padding-left: 10px !important
 			padding-right: 10px !important
@@ -944,3 +946,248 @@ main
 	white-space: nowrap !important
 	text-overflow: ellipsis
 	overflow: hidden
+
+// STARTUP
+
+.form-control
+	&:focus
+		box-shadow: 0 0 0 0.2rem rgba(255,128,128,.25)
+		border-color: #FF8080
+
+.cart-content-add
+	padding: 30px
+	display: flex
+	flex-grow: 1
+	flex-direction: column
+	@media (max-width: 575.98px)
+		padding: 20px
+
+.btn-startup
+	text-transform: capitalize
+	padding: 12px 36px
+.btn-startup-blue
+	text-transform: capitalize
+	padding: 12px 36px
+	background: #05385C
+
+.breadcrumb
+	background: inherit
+	padding-left: 0
+	padding-right: 0
+	font-size: 14px
+	font-family: 'Titillium Web', sans-serif
+	margin-bottom: 0
+	.breadcrumb-item
+		padding-left: 6px
+		+ .breadcrumb-item
+			&:before
+				content: ">"
+				padding-right: 6px
+		&.active 
+			color: #181B31
+		a
+			color: #797676
+			&:hover
+				opacity: .6
+
+.form-startup
+	.custom-select
+		background: #fff url(../img/arrow-select.svg) no-repeat right 1rem center/11px 7px
+		padding: 6px 16px
+		height: 45px
+		font-size: 14px
+		width: 100%
+		border-radius: 100px
+
+.or
+	position: relative
+	span
+		background: #FFF
+		display: inline-block
+		padding: 4px 10px
+		position: relative
+		z-index: 2
+	&:before 
+		content: ""
+		position: absolute
+		height: 1px
+		width: 100%
+		top: 50%
+		right: 0
+		transform: translateY(-50%)
+		background: #E3E6ED
+		z-index: 1
+
+.step-2, .step-3, .step-4
+	display: none
+
+.progress-wrapper
+	position: relative
+	text-align: center
+	color: gray
+	font-size: 11px
+	margin-bottom: 2rem
+	.progress
+		height: 2px
+		position: absolute
+		top: 11.5px
+		left: 20px
+		right: 20px
+	.progress-bar
+		width: 0
+	span 	
+		transition: .6s
+		&:before 
+			content: ''
+			display: block
+			width: 23px
+			height: 23px
+			border: 6px solid #000
+			background-color: #71C9D9
+			border-radius: 100px
+			margin: 0 auto .25rem
+			transition: .6s
+			background-clip: content-box
+			padding: 5px
+			margin-bottom: 15px
+	.col-auto
+		&:nth-child(1)
+			span
+				color: green
+				&:before 
+					background-color: #FFF
+	&.step-2-active
+		.progress-bar
+			width: 50%
+		.col-auto
+			&:nth-child(1)
+				span
+					&:before 
+						border-width: 0
+			&:nth-child(2)
+				span
+					color: green
+					&:before 
+						background-color: green
+		~ .card
+			.step-1
+				display: none
+			.step-2
+				display: block
+	&.step-3-active
+		.progress-bar
+			width: 100%
+		.col-auto
+			&:nth-child(2)
+				span
+					&:before 
+						border-width: 0
+			&:nth-child(3)
+				span
+					color: green
+					&:before 
+						background-color: green
+		~ .card
+			.step-2
+				display: none
+			.step-3
+				display: block
+	&.step-4-active
+		.col-auto
+			&:nth-child(3)
+				span
+					&:before 
+						border-width: 0
+		~ .card
+			.step-3
+				display: none
+			.step-4
+				display: block
+
+.form-steps
+	padding: 6px 16px
+	height: 45px
+	font-size: 14px
+	border-radius: 100px
+	&::-webkit-input-placeholder
+		color: #797676
+	&::-moz-placeholder
+		color: #797676
+	&:-ms-input-placeholder
+		color: #797676
+
+.textarea-steps
+	border-color: #ced4da
+	padding: 6px 16px
+	border-radius: 10px	
+	font-size: 14px
+	resize: none
+	&::-webkit-input-placeholder
+		color: #797676
+	&::-moz-placeholder
+		color: #797676
+	&:-ms-input-placeholder
+		color: #797676
+
+.upload-image
+	border-radius: 3px
+	background: #F6F7F9
+	padding: 15px
+	display: flex
+	flex-direction: column
+	cursor: pointer
+	.drag 
+		border: 1px dashed #B9B9B9
+		flex-grow: 1
+		padding: 16px
+		text-align: center
+
+input[type="radio"]
+	display: none
+	~ .f
+		display: inline-block
+		width: 16px
+		height: 16px
+		cursor: pointer
+		margin-right: 3px
+		border: 1px solid #DCDCDC
+		border-radius: 100px
+		position: relative
+	&:checked
+		~ .f
+			transition: .3s
+			background: #FF8080
+			border-color: #FF8080
+			color: #FF8080
+			&:before 
+				content: ''
+				width: 12px
+				height: 12px
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				border: 2px solid #fff
+				border-radius: 100px
+
+.special-inputs
+	position: relative
+	.special-input
+		padding-left: 48px
+	.fab
+		position: absolute
+		top: 50%
+		left: 10px
+		display: inline-block
+		width: 29px
+		height: 29px
+		border-radius: 100px
+		background: #A2A2A2
+		transform: translateY(-50%)
+		&:before 
+			position: absolute
+			color: #FFF
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+
