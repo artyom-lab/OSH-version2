@@ -37,7 +37,7 @@ body
 
 b 
 	font-weight: 600
-	
+
 .bg-blue1 
 	background-color: #71C9D9 !important
 .bg-blue2 
@@ -730,6 +730,7 @@ div
 .avatar
 	width: 38px
 	height: 38px
+	border-radius: 100px
 	background-size: cover
 	background-position: center center
 	display: inline-block
@@ -1342,6 +1343,10 @@ input[type="radio"]
 	text-align: center
 	background-color: #fff
 	position: relative
+	color: #797676
+	&.card-startup-2
+		@media (min-width: 576px)
+			padding: 30px 30px 24px
 	.imb-bb
 		border-bottom: 1px solid #ECEBED
 		margin-bottom: 12px
@@ -1383,4 +1388,29 @@ input[type="radio"]
 .tooltip-inner
 	padding: 10px
 	text-align: left
+
+.ava
+	width: 100px
+	height: 100px
+	overflow: hidden
+
+@media (min-width: 1200px)
+	.col-xl-2-5
+		flex: 0 0 20%
+		max-width: 20%
+
+.link-circle.fab
+	font-size: 10px
+	line-height: 24px
+	width: 24px
+	height: 24px
+	color: #fff !important
+	&.fa-linkedin-in
+		background-color: #0075AA
+	&.fa-instagram
+		background: linear-gradient(45deg, #FFC107, #F44336, #9C27B0)
+	&.fa-facebook-f
+		background-color: #4267B2
+	&.fa-twitter
+		background-color: #03A9F4
 

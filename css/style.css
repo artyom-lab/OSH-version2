@@ -1130,6 +1130,7 @@ div::-webkit-scrollbar-thumb {
 .avatar {
   width: 38px;
   height: 38px;
+  border-radius: 100px;
   background-size: cover;
   background-position: center center;
   display: inline-block;
@@ -1969,6 +1970,13 @@ input[type="radio"]:checked ~ .f:before {
   text-align: center;
   background-color: #fff;
   position: relative;
+  color: #797676;
+}
+
+@media (min-width: 576px) {
+  .card-startup.card-startup-2 {
+    padding: 30px 30px 24px;
+  }
 }
 
 .card-startup .imb-bb {
@@ -2026,4 +2034,41 @@ input[type="radio"]:checked ~ .f:before {
 .tooltip-inner {
   padding: 10px;
   text-align: left;
+}
+
+.ava {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+@media (min-width: 1200px) {
+  .col-xl-2-5 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+.link-circle.fab {
+  font-size: 10px;
+  line-height: 24px;
+  width: 24px;
+  height: 24px;
+  color: #fff !important;
+}
+
+.link-circle.fab.fa-linkedin-in {
+  background-color: #0075AA;
+}
+
+.link-circle.fab.fa-instagram {
+  background: linear-gradient(45deg, #FFC107, #F44336, #9C27B0);
+}
+
+.link-circle.fab.fa-facebook-f {
+  background-color: #4267B2;
+}
+
+.link-circle.fab.fa-twitter {
+  background-color: #03A9F4;
 }
