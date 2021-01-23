@@ -49,6 +49,38 @@ $(document).ready(function () {
     e.stopPropagation();
   });
 
+  $('[data-toggle="tooltip"]').each(function () {
+	  $(this).tooltip({
+	    template: '<div class="tooltip ' + $(this).attr("data-style") + '"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+	  });
+	});
+
+  $('[data-toggle="tooltip"]').tooltip({
+  	container: $(this).closest()
+  });
+
+  var snapSlider = document.getElementById('slider');
+	noUiSlider.create(snapSlider, {
+	    start: 100000,
+	    behaviour: 'snap',
+	    connect: [true, false],
+	    range: {
+        'min': 50000,
+        'max': 500000,
+	    },
+	    pips: {
+        mode: 'range',
+        density: 100,
+        format: wNumb({
+          thousand: ',',
+        })
+	    },
+    	tooltips: wNumb({
+    		decimals: 0, 
+    		thousand: ',',
+    	}),
+	});
+
 	$("#step-2").on("click", function(){
 		$(".progress-wrapper").addClass("step-2-active");
 	});

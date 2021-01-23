@@ -35,6 +35,9 @@ body
 	flex-direction: column
 	min-height: 100vh
 
+b 
+	font-weight: 600
+	
 .bg-blue1 
 	background-color: #71C9D9 !important
 .bg-blue2 
@@ -59,7 +62,7 @@ body
 
 .container 
 	@media (min-width: 1200px)
-		max-width: 1120px
+		max-width: 1170px
 
 .titillium 
 	font-family: 'Titillium Web', sans-serif
@@ -77,6 +80,12 @@ body
 		> [class*='col']
 			padding-left: 22px
 			padding-right: 22px
+	.row-4
+		margin-left: -25px
+		margin-right: -25px
+		> [class*='col']
+			padding-left: 25px
+			padding-right: 25px
 .row-3
 	margin-left: -4px
 	margin-right: -4px
@@ -111,6 +120,8 @@ body
 
 .fz-0
 	font-size: 0px
+.fz-10
+	font-size: 10px
 .fz-12
 	font-size: 12px
 .fz-14
@@ -137,6 +148,9 @@ body
 	font-size: 40px
 .fz-48
 	font-size: 48px
+.fz-60
+	font-size: 60px
+	line-height: 66px
 
 .fw-500
 	font-weight: 500
@@ -153,15 +167,6 @@ body
 
 .border-3
 	border-radius: 3px
-
-.link-pink
-	font-size: 12px
-	font-weight: bold
-	font-family: 'Titillium Web', sans-serif
-	color: #FF8080 !important
-
-.link-blue
-	color: #71C9D9 !important
 
 .fixed-top
 	color: #fff
@@ -212,7 +217,7 @@ body
 			padding-right: 10px !important
 	a 
 		color: inherit !important
-	&.navbar-bg
+	&.navbar-bg, .body-main &
 		background: #05385C
 	@media (max-width: 1199.98px)
 		#navbar
@@ -294,15 +299,17 @@ body
 		width: 26px
 
 .header 
-	overflow: hidden
 	color: #fff
-	padding-top: 114px
+	overflow: hidden
 	padding-bottom: 140px
-	@media (max-width: 575.98px)
-		padding-top: 98px
 	> .container
 		padding-top: 93px
 		padding-bottom: 94px
+
+.header, .body-main main
+	padding-top: 114px
+	@media (max-width: 575.98px)
+		padding-top: 98px
 
 .o-hidden
 	overflow: hidden
@@ -313,9 +320,9 @@ main
 	background: #F1F4F8
 	overflow: hidden
 	flex-grow: 1
+	border-bottom: 1px solid #DCDCDC
 	&.main-dashboard 
 		display: flex
-		border-bottom: 1px solid #DCDCDC
 		@media (max-width: 991.98px)
 			flex-wrap: wrap
 
@@ -327,7 +334,6 @@ main
 	position: relative
 	box-shadow: none !important
 	transition: .3s
-	text-transform: uppercase
 	span 
 		vertical-align: middle
 	&:hover:not(.btn-my)
@@ -338,6 +344,7 @@ main
 	border: none
 	background: #FD8080
 	color: #FFF !important
+	text-transform: uppercase
 	&:after 
 		content: ''
 		display: inline-block
@@ -386,6 +393,15 @@ main
 		&:after 
 			width: 100%
 
+.link-pink
+	font-size: 12px
+	font-weight: bold
+	font-family: 'Titillium Web', sans-serif
+	color: #FF8080 !important
+
+.link-blue
+	color: #71C9D9 !important
+
 .section-1
 	position: relative
 	background-color: #fff
@@ -402,7 +418,7 @@ main
 				display: none
 		.card-1 
 			height: 100%
-			padding: 32px
+			padding: 40px
 			border-radius: 0 !important
 			box-shadow: 10px 10px 24px rgba(0, 0, 0, .1)
 			transition: .3s
@@ -593,6 +609,15 @@ main
 			transform: scale(1.1)
 
 // DASHBOARD
+
+div 
+	&::-webkit-scrollbar
+		width: 5px
+	&::-webkit-scrollbar-track
+		background-color: transparent
+	&::-webkit-scrollbar-thumb
+		background-color: #ECEBED
+		border-radius: 4px
 
 .body-dashboard
 	transition: .3s
@@ -1190,4 +1215,172 @@ input[type="radio"]
 			top: 50%
 			left: 50%
 			transform: translate(-50%, -50%)
+
+// Sturtups Bogdan
+
+.section-3
+	padding: 70px 0 
+
+.block-startups
+	color: #fff
+	background-color: #05385C
+	margin-bottom: 30px
+	padding: 30px 30px 6px
+	border-radius: 3px
+	@media (max-width: 575.98px)
+		padding-left: 15px
+		padding-right: 15px
+	.bl 
+		padding: 15px 35px
+		text-align: center
+		border-radius: 3px
+		background-color: #71C9D9
+		@media (min-width: 992px)
+			width: 221px
+
+.filters
+	min-width: 260px
+	.filter-block 
+		border-bottom: 1px solid #DCDCDC
+		+ .filter-block
+			margin-top: 20px
+	.filter-list
+		margin-top: 15px
+		margin-bottom: 20px
+		max-height: 140px
+		overflow: auto
+
+.checkbox-group
+	font-size: 14px
+	line-height: 1.45
+	display: block
+	color: #797676
+	padding-left: 30px
+	margin-bottom: 0
+	position: relative
+	cursor: pointer
+	transition: .3s
+	+ .checkbox-group
+		margin-top: 10px
+	div:before
+		content: ''
+		position: absolute
+		left: 0
+		top: 50%
+		transform: translateY(-50%)
+		border-radius: 5px
+		width: 20px
+		height: 20px
+		border: 1px solid #ECEBED
+		background-color: #fff
+		background-position: center center
+		background-repeat: no-repeat
+		background-size: 10px
+		transition: .3s
+	input
+		display: none
+		&:checked ~ div:before
+			border-color: #FF8080
+			background-color: #FF8080
+			background-image: url(../img/i-verified.svg)
+	&:hover
+		opacity: .7
+
+.slider-wrap
+	font-size: 14px
+	font-family: 'Titillium Web', sans-serif
+	margin-top: 53px !important
+	margin-bottom: 53px !important
+	overflow: visible !important
+
+.noUi-target
+	background: #DCDCDC
+	border: none
+	box-shadow: none
+.noUi-handle
+	border: none
+	border-radius: 100px
+	background: #FF8080
+	box-shadow: none
+	&:after, &:before
+		display: none
+.noUi-tooltip
+	border: none
+	background: transparent
+	color: #05385C
+.noUi-connect
+	background: #FF8080
+.noUi-horizontal
+	height: 5px
+	.noUi-handle
+		width: 15px
+		height: 15px
+		right: -7.5px
+		top: -5px
+	.noUi-tooltip
+		top: calc(100% + 5px)
+		bottom: auto
+.noUi-pips
+	color: #05385C
+.noUi-pips-horizontal
+	top: auto 
+	bottom: 100%
+.noUi-marker-horizontal
+	display: none
+.noUi-value-horizontal
+	transform: translate(0, 150%)
+	&:last-child 
+		transform: translate(-100%, 150%)
+
+.card-startup
+	display: flex
+	flex-direction: column
+	border-radius: 3px
+	padding: 25px 25px 23px
+	margin-bottom: 10px
+	height: calc(100% - 10px)
+	text-align: center
+	background-color: #fff
+	position: relative
+	.imb-bb
+		border-bottom: 1px solid #ECEBED
+		margin-bottom: 12px
+
+.link-tooltip
+	position: absolute
+	top: 10px
+	right: 10px
+	width: 15px 
+	height: 15px
+	border-radius: 100px
+	background-repeat: no-repeat 
+	background-position: center center
+	cursor: pointer
+	&[data-style="verified"]
+		background-color: #14C27B
+		background-image: url(../img/i-verified.svg)
+	&[data-style="unclaimed"]
+		background-color: #FFC000
+		background-image: url(../img/i-unclaimed.svg)
+
+.tooltip
+	font-size: 14px
+	&.show 
+		opacity: 1
+	&.verified
+		.tooltip-inner
+			background-color: #14C27B
+		&.bs-tooltip-auto[x-placement^=top], &.bs-tooltip-top 
+			.arrow:before
+				border-top-color: #14C27B
+	&.unclaimed
+		.tooltip-inner
+			color: #05385C
+			background-color: #FFC000
+		&.bs-tooltip-auto[x-placement^=top], &.bs-tooltip-top 
+			.arrow:before
+				border-top-color: #FFC000
+.tooltip-inner
+	padding: 10px
+	text-align: left
 
