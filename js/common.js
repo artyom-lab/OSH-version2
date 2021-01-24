@@ -20,8 +20,8 @@ $(document).ready(function () {
 		disable: 'mobile'
 	});
 
-  Waves.attach('.btn, .link-circle, .accordion-links, .demopills span, .info');
-  Waves.attach('#navbar .nav-link, .img-transform, .bg-img, .dropdown-item', ['waves-light']);
+  Waves.attach('.btn, .link-circle, .accordion-links, .demopills span, .info, .close');
+  Waves.attach('#navbar .nav-link, .img-transform, .bg-img, .dropdown-item, .special-inputs .fab', ['waves-light']);
   Waves.init();
 
 	function footer() {
@@ -67,6 +67,16 @@ $(document).ready(function () {
 	});
 	$("#step-4").on("click", function(){
 		$(".progress-wrapper").addClass("step-4-active");
+	});
+
+	$("#step-back-2").on("click", function(){
+		$(".progress-wrapper").removeClass("step-2-active");
+	});
+	$("#step-back-3").on("click", function(){
+		$(".progress-wrapper").removeClass("step-3-active");
+	});
+	$("#step-back-4").on("click", function(){
+		$(".progress-wrapper").removeClass("step-4-active");
 	});
 
   var snapSlider = document.getElementById('slider');
