@@ -20,7 +20,7 @@ $(document).ready(function () {
 		disable: 'mobile'
 	});
 
-  Waves.attach('.btn, .link-circle, .accordion-links, .demopills span, .info, .close');
+  Waves.attach('.btn, .link-circle, .accordion-links, .demopills span, .info, .close, .page-link');
   Waves.attach('#navbar .nav-link, .img-transform, .bg-img, .dropdown-item, .special-inputs .fab', ['waves-light']);
   Waves.init();
 
@@ -58,25 +58,39 @@ $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip({
   	container: $(this).closest()
   });
+  $('[data-toggle="popover"]').popover();
 
+  function scrollToTop() {
+		$('html, body').animate({ scrollTop: 0 });
+	};
 	$("#step-2").on("click", function(){
 		$(".progress-wrapper").addClass("step-2-active");
+		scrollToTop();
 	});
 	$("#step-3").on("click", function(){
 		$(".progress-wrapper").addClass("step-3-active");
+		scrollToTop();
 	});
 	$("#step-4").on("click", function(){
 		$(".progress-wrapper").addClass("step-4-active");
+		scrollToTop();
 	});
 
 	$("#step-back-2").on("click", function(){
 		$(".progress-wrapper").removeClass("step-2-active");
+		scrollToTop();
 	});
 	$("#step-back-3").on("click", function(){
 		$(".progress-wrapper").removeClass("step-3-active");
+		scrollToTop();
 	});
 	$("#step-back-4").on("click", function(){
 		$(".progress-wrapper").removeClass("step-4-active");
+		scrollToTop();
+	});
+
+	$("select").select2({
+		minimumResultsForSearch: Infinity
 	});
 
   var snapSlider = document.getElementById('slider');
