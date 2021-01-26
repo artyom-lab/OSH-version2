@@ -268,9 +268,11 @@ textarea.form-control {
   width: 100% !important;
   display: block;
   text-align: left; }
-  .select2-container .select2-selection--single .select2-selection__rendered {
-    padding-left: 19px;
-    padding-right: 45px; }
+  .select2-container .select2-selection--single {
+    height: 45px; }
+    .select2-container .select2-selection--single .select2-selection__rendered {
+      padding-left: 19px;
+      padding-right: 45px; }
 
 .select2-container--default .select2-selection--single {
   display: flex;
@@ -1664,5 +1666,66 @@ main {
     background-color: #4267B2; }
   .link-circle.fab.fa-twitter {
     background-color: #03A9F4; }
+
+.bg-gray2 {
+  background-color: #F6F7F9; }
+
+.form-investors {
+  position: relative; }
+  .form-investors .form-control {
+    background: #F6F7F9;
+    padding-left: 46px; }
+    .form-investors .form-control:focus {
+      background: #F6F7F9; }
+  .form-investors img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px; }
+
+.form-password .form-control {
+  background: #F6F7F9; }
+  .form-password .form-control:focus {
+    background: #F6F7F9; }
+
+.b-1 {
+  border: 1px solid #ECEBED; }
+
+.calendar-time {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%); }
+
+.investor {
+  display: inline-block;
+  background: #FFF;
+  border-radius: 100px;
+  padding: 9px 14px;
+  font-size: 14px;
+  color: #05385C; }
+
+.block-notif {
+  border-bottom: 1px solid #E3E6ED;
+  padding-bottom: 15px;
+  margin-bottom: 15px; }
+
+.bg-img-notif {
+  width: 40px;
+  border-radius: 100px; }
+
+.delete {
+  background-image: url(../img/delete.svg);
+  margin-right: -8px; }
+
+@media (min-width: 992px) {
+  .modal-my {
+    max-width: 650px; } }
+.bg-pencil {
+  background-image: url(../img/pencil.svg); }
+
+.cart-follows {
+  box-shadow: none;
+  border: 1px solid #ECEBED; }
 
 /*# sourceMappingURL=style.css.map */

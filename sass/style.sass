@@ -237,6 +237,7 @@ textarea.form-control
 	display: block
 	text-align: left
 	.select2-selection--single
+		height: 45px
 		.select2-selection__rendered
 			padding-left: 19px
 			padding-right: 45px
@@ -1634,3 +1635,69 @@ main
 	&.fa-twitter
 		background-color: #03A9F4
 
+// 25.01.2021
+
+.bg-gray2
+	background-color: #F6F7F9
+
+.form-investors	
+	position: relative
+	.form-control
+		background: #F6F7F9
+		padding-left: 46px
+		&:focus 
+			background: #F6F7F9
+	img
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		left: 20px
+
+.form-password
+	.form-control
+		background: #F6F7F9
+		&:focus 
+			background: #F6F7F9
+
+.b-1
+	border: 1px solid #ECEBED
+
+.calendar-time
+	position: absolute 
+	top: 50%
+	right: 20px
+	transform: translateY(-50%)
+
+.investor
+	display: inline-block
+	background: #FFF
+	border-radius: 100px
+	padding: 9px 14px
+	font-size: 14px
+	color: #05385C
+
+.block-notif
+	border-bottom: 1px solid #E3E6ED
+	padding-bottom: 15px
+	margin-bottom: 15px
+
+.bg-img-notif
+	width: 40px
+	border-radius: 100px
+
+.delete 
+	background-image: url(../img/delete.svg)
+	margin-right: -8px
+
+// 26.01.2026
+
+@media (min-width: 992px)
+	.modal-my
+		max-width: 650px
+
+.bg-pencil
+	background-image: url(../img/pencil.svg)
+
+.cart-follows
+	box-shadow: none
+	border: 1px solid #ECEBED
