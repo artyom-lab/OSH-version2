@@ -55,24 +55,62 @@
 				</ul>
 			</div>
 			<div class="art align-items-center">
-				<div class="dropdown dropdown-1">
-					<a href="#!" class="dropdown-toggle align-middle pr-3 pr-sm-4" data-toggle="dropdown">
+				<div class="dropdown mr-3 mr-sm-4">
+					<a href="#!" class="align-middle" data-toggle="dropdown">
 						<span class="align-middle fz-0">
 							<img src="img/oman.png" alt="">
 						</span>
-						<span class="align-middle pl-1">عربي  </span>
+						<span class="align-middle pl-1">عربي</span>
 						<img src="img/arrow.svg" alt="">
 					</a>
           <div class="dropdown-menu">
             <a href="#!" class="dropdown-item">English</a>
-            <a href="#!" class="dropdown-item">عربي  </a>
+            <a href="#!" class="dropdown-item">عربي</a>
           </div>
 				</div>
-				<div class="fz-0 bell align-middle">
-					<a href="#!" class="position-relative">
+				<div class="dropdown dropdown-2 fz-0 bell">
+					<a href="#!" class="position-relative" data-toggle="dropdown">
 						<img src="img/bell.svg" alt="">
 						<span class="bell-circle"></span>
 					</a>
+					<div class="dropdown-menu fz-14 gray">
+						<div class="block-notif pb-2 mb-2">
+							<div class="form-row">
+								<div class="col-auto">
+									<div class="bg-img bg-img4 bg-img-notif align-middle embed-responsive embed-responsive-1by1" style="background-image: url(img/related-4.jpg)"></div>
+								</div>
+								<div class="col">
+									<div><span class="blue">Shakeeba Zakaria</span> wants to Aliquam eu gravida est, et tincidunt enim</div>
+									<div class="fz-12 gray2 mt-1">5 minutes ago</div>
+								</div>
+							</div>
+						</div>
+						<div class="block-notif pb-2 mb-2">
+							<div class="form-row">
+								<div class="col-auto">
+									<div class="bg-img bg-img4 bg-img-notif align-middle embed-responsive embed-responsive-1by1" style="background-image: url(img/related-3.jpg)"></div>
+								</div>
+								<div class="col">
+									<div><span class="blue">Zavier Sadek</span> Vivamus massa vitae faucibus. Maecenas nec null.</div>
+									<div class="fz-12 gray2 mt-1">25 minutes ago</div>
+								</div>
+							</div>
+						</div>
+						<div class="block-notif pb-2 mb-2">
+							<div class="form-row">
+								<div class="col-auto">
+									<div class="bg-img bg-img4 bg-img-notif align-middle embed-responsive embed-responsive-1by1" style="background-image: url(img/related-5.jpg)"></div>
+								</div>
+								<div class="col">
+									<div><span class="blue">Aroosa Mohammed</span> Vestibulum dapibus in nisi pulvinar tempor.</div>
+									<div class="fz-12 gray2 mt-1">32 minutes ago</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-center">
+							<a href="#!" class="link-line mt-1">See all notifications</a>
+						</div>
+					</div>
 				</div>
 				<a href="#!" class="fz-14 pl-md-4 d-block">
 					<span class="align-middle d-none d-md-inline">Ibrahim Almalky</span>
@@ -134,7 +172,18 @@
 							<div class="col long-word">
 								<div class="fz-14 blue long-word">ADAA Real State</div>
 								<div class="fz-12 font-weight-bold titillium text-uppercase green">Approved</div>
-							</div> 
+							</div>
+							<div class="col-auto">
+								<div class="points-wrap dropdown dropdown-1">
+              		<a href="#!" class="link-circle three-points" data-toggle="dropdown"></a>
+				          <div class="dropdown-menu">
+				            <a href="#!" class="dropdown-item">Manage members</a>
+				            <a href="#!" class="dropdown-item">Add support activity</a>
+				            <a href="#!" class="dropdown-item">Edit company</a>
+				            <a href="#!" class="dropdown-item">Followers</a>
+				          </div>
+			          </div>
+							</div>
 						</div>
 						<div class="row row-1 py-1">
 							<div class="col-auto fz-0">
@@ -321,7 +370,7 @@
 									<div class="col-lg-10">
 										<h4 class="mt-2 mb-3">Support Activity details</h4>
 										<div class="row row-1 mb-4">
-											<div class="col-md-6 mb-3 mb-md-0">
+											<div class="col-md-6">
 												<div class="form-group">
                           <small class="fw-600 gray">Choose Support Activity</small>
 												  <select class="custom-select">
@@ -332,7 +381,7 @@
 												  </select>
                         </div>
                       </div>
-                      <div class="col-md-6 mb-3 mb-md-0">
+                      <div class="col-md-6">
 												<div class="form-group">
                           <small class="fw-600 gray">Choose Startup</small>
 												  <select class="custom-select">
@@ -343,7 +392,7 @@
 												  </select>
                         </div>
 											</div>
-                      <div class="col-md-6 mb-3 mb-md-0">
+                      <div class="col-md-6">
 												<div class="form-group">
                           <small class="fw-600 gray">Funding Statge</small>
 												  <select class="custom-select">
@@ -354,7 +403,7 @@
 												  </select>
                         </div>
 											</div>
-                      <div class="col-md-6 mb-3 mb-md-0">
+                      <div class="col-md-6">
 												<div class="form-group">
                           <small class="fw-600 gray">Funding Type</small>
 												  <select class="custom-select">
@@ -365,13 +414,13 @@
 												  </select>
                         </div>
 											</div>
-                      <div class="col-md-6 mb-3 mb-md-0">
+                      <div class="col-md-6">
 												<div class="form-group">
                           <small class="fw-600 gray">Funding Raised</small>
                           <input type="text" class="form-control" name="name" placeholder="OMR">
                         </div>
 											</div>
-                      <div class="col-md-6 mb-3 mb-md-0">
+                      <div class="col-md-6">
 												<div class="form-group">
                           <small class="fw-600 gray">Pre- money Valuations</small>
                           <input type="text" class="form-control" name="name" placeholder="OMR">
@@ -386,14 +435,14 @@
 															<h4 class="mb-0">Investors to this Support Activity</h4>
 														</div>
 														<div class="col-sm-auto mt-3 mt-sm-0">
-															<a href="#!" class="btn btn-my btn-login btn-add btn-startup-blue">
+															<a href="#modal" class="btn btn-my btn-login btn-add btn-startup-blue" data-toggle="modal">
 																<span class="fz-0 align-middle bg-icons bg-cross-white"></span>
 																<span class="align-middle fz-12 pl-2">Create a new investors</span>
 															</a>
 														</div>
 													</div>
 													<small class="fw-600 gray">Investors</small>
-													<div class="form-group form-investors mb-0">
+													<div class="form-icon form-icon-left">
 	                          <input type="text" class="form-control" name="name" placeholder="Search investors">
 	                          <img src="img/search-gray.svg" alt="">
 	                        </div>
@@ -402,7 +451,7 @@
 										</div>
 										<hr>
 										<div class="text-center py-3">
-  										<a href="#!" class="btn btn-my btn-login btn-add btn-startup align-middle" data-toggle="modal" data-target="#modal"><span>Create Support Activity</span></a>
+  										<a href="#modal-1" class="btn btn-my btn-login btn-add btn-startup" data-toggle="modal"><span>Create Support Activity</span></a>
 										</div>
 									</div>
 								</div>
@@ -527,20 +576,75 @@
 		</footer>
 
 		<div class="modal fade" id="modal">
-		  <div class="modal-dialog modal-dialog-centered modal-lg">
+		  <div class="modal-dialog modal-dialog-centered modal-my">
+		    <div class="modal-content">
+		      <a href="#!" class="close" data-dismiss="modal"></a>
+		      <div class="modal-body">
+	      		<h4 class="mb-3">Create Investor</h4>
+	      		<div class="row row-1 pb-2">
+	      			<div class="col-sm mb-3 mb-sm-0">
+								<small class="fw-600 gray">Investor Logo</small>
+								<div class="upload-image">
+									<div class="drag">
+										<div>
+											<img src="img/upload.svg" alt="">
+										</div>
+										<div class="fz-14 fw-600 blue pt-1">Drag and drop an image</div>
+										<div class="fz-10 gray">or browse to choose a file</div>
+									</div>
+								</div>
+	      			</div>
+	      			<div class="col-sm">
+	      				<div class="form-group">
+                  <small class="fw-600 gray">Investor Name</small>
+                  <input type="text" class="form-control" name="name" placeholder="Enter here">
+                </div>
+	      				<div class="form-group">
+                  <small class="fw-600 gray">Amount</small>
+                  <input type="text" class="form-control" name="name" placeholder="OMR">
+                </div>
+                <div class="form-group">
+	                <small class="fw-600 gray">Lead investor ?</small>
+	                <div class="row mt-3">
+	                	<div class="col-auto">
+	                		<label class="check-group radio-group">
+				                <input type="radio" name="choice">
+				                <div>Yes</div>
+				              </label>
+	                	</div>
+	                	<div class="col-auto">
+	                		<label class="check-group radio-group">
+				                <input type="radio" name="choice">
+				                <div>No</div>
+				              </label>
+	                	</div>
+	                </div>
+	              </div>
+	      			</div>
+	      		</div>
+	      		<div class="text-center">
+							<a href="#!" class="btn btn-my btn-login btn-startup mt-4"><span>Done</span></a>
+						</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="modal fade" id="modal-1">
+		  <div class="modal-dialog modal-dialog-centered modal-my">
 		    <div class="modal-content">
 		      <a href="#!" class="close" data-dismiss="modal"></a>
 		      <div class="modal-body text-center">
-		      	<a href="#!" class="cart-content-add mx-3 mx-lg-4 mb-4 b-1">
-		      		<img src="img/hands.svg" alt="">
+		      	<a href="#!" class="cart-content-add mx-md-3 mx-lg-4 mb-4 b-1">
+		      		<div><img src="img/hands.svg" alt=""></div>
 		      		<h4 class="mt-4">
 		      			<span class="align-middle">Support Activity</span>
 		      			<img src="img/arrow-support.svg" class="mx-3 align-middle" alt="">
 		      			<span class="align-middle">Supporter Company</span>
 		      		</h4>
 		      	</a>
-		      	<a href="#!" class="cart-content-add mx-3 mx-lg-4 b-1">
-		      		<img src="img/rocket.svg" alt="">
+		      	<a href="#!" class="cart-content-add mx-md-3 mx-lg-4 b-1">
+		      		<div><img src="img/rocket.svg" alt=""></div>
 		      		<h4 class="mt-4">
 		      			<span class="align-middle">Support Activity</span>
 		      			<img src="img/arrow-support.svg" class="mx-3 align-middle" alt="">

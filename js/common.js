@@ -20,8 +20,8 @@ $(document).ready(function () {
 		disable: 'mobile'
 	});
 
-  Waves.attach('.btn, .link-circle, .accordion-links, .demopills span, .info, .close, .page-link');
-  Waves.attach('#navbar .nav-link, .img-transform, .bg-img, .dropdown-item, .special-inputs .fab', ['waves-light']);
+  Waves.attach('.btn, .link-circle, .accordion-links, .demopills span, .info, .close, .page-link, .dropdown-item');
+  Waves.attach('#navbar .nav-link, .img-transform, .bg-img, .special-inputs .fab', ['waves-light']);
   Waves.init();
 
 	function footer() {
@@ -58,7 +58,6 @@ $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip({
   	container: $(this).closest()
   });
-  $('[data-toggle="popover"]').popover();
 
   function scrollToTop() {
 		$('html, body').animate({ scrollTop: 0 });

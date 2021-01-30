@@ -41,6 +41,9 @@ b
 small
 	font-size: 12px
 
+hr
+	border-top-color: #ECEBED
+
 div, ul
 	&::-webkit-scrollbar
 		width: 5px
@@ -68,6 +71,8 @@ div, ul
 	color: #FF8080
 .gray 
 	color: #707070
+.gray2
+	color: #BBBBBB
 .green 
 	color: #2CB374
 .brown
@@ -105,6 +110,12 @@ div, ul
 	> [class*='col']
 		padding-left: 4px
 		padding-right: 4px
+.row-5
+	margin-left: -10px
+	margin-right: -10px
+	> [class*='col']
+		padding-left: 10px
+		padding-right: 10px
 
 @media (min-width: 1200px)
 	.col-xl-2-5
@@ -186,6 +197,9 @@ div, ul
 .border-3
 	border-radius: 3px
 
+.static 
+	position: static !important
+
 .form-control, .custom-select
 	padding: 6px 19px
 	height: 45px
@@ -193,6 +207,7 @@ div, ul
 	color: #797676
 	border-radius: 100px
 	border-color: #DCDCDC
+	background-color: transparent !important
 	&.fc-sm
 		height: 40px
 	&::-webkit-input-placeholder
@@ -204,6 +219,9 @@ div, ul
 	&:focus
 		box-shadow: 0 0 0 0.2rem rgba(255, 128, 128, .25)
 		border-color: #FF8080
+	&:disabled, &[readonly]
+		background-color: #fff
+		text-overflow: ellipsis
 
 textarea.form-control
 	border-radius: 10px	
@@ -229,6 +247,24 @@ textarea.form-control
 	background: url(../img/arrow-select.svg) no-repeat calc(100% - 19px) center
 	padding-right: 45px
 	cursor: pointer
+
+.form-icon
+	position: relative
+	img 
+		position: absolute 
+		top: 50%
+		transform: translateY(-50%)
+		pointer-events: none
+.form-icon-left
+	.form-control
+		padding-left: 45px
+	img 
+		left: 19px
+.form-icon-right
+	.form-control
+		padding-right: 45px
+	img 
+		right: 19px
 
 .fc-sm ~ .select2-container .select2-selection--single
 	height: 40px
@@ -542,7 +578,16 @@ main
 .btn-add 
 	text-transform: capitalize
 
-.link-line
+.btn-my-outline
+	color: #f98e8e !important
+	background-color: transparent
+	border: 1px solid #f98e8e
+	&:hover 
+		color: #fff !important
+	&:after 
+		display: none
+
+.link-line, .fixed-top .link-line
 	position: relative
 	color: #FF8080 !important
 	display: inline-block
@@ -594,6 +639,7 @@ main
 			border: 0
 			&:hover 
 				box-shadow: 2px 2px 10px rgba(0, 0, 0, .2)
+				transform: translateY(-5px)
 		.card-2
 			height: 100%
 			padding: 30px
@@ -659,7 +705,7 @@ main
 			color: #FF8080
 
 .nav-companies
-	border-bottom: 1px solid #ced4da
+	border-bottom: 1px solid #D7D8DA
 	.nav-link
 		font-size: 20px
 		padding: 8px 0
@@ -959,7 +1005,6 @@ main
 	flex-direction: column
 	border-radius: 3px
 	background-color: #fff
-	box-shadow: 0 1px 1px rgba(0, 0, 0, .1)
 	margin-bottom: 30px
 	height: calc(100% - 30px)
 	@media (max-width: 767.98px)
@@ -984,38 +1029,6 @@ main
 	@media (max-width: 1199.98px)
 		padding: 15px
 
-.dropdown-1 
-	.dropdown-toggle 
-		&:after 
-			display: none
-	.dropdown-menu
-		margin-top: 0
-		left: 0
-		color: inherit
-		background: #05385C
-		min-width: auto
-		border: 0
-		border-radius: 0 0 4px 4px
-		display: block
-		transition: .3s
-		top: 100%
-		opacity: 0
-		pointer-events: none
-		&.show
-			top: 200%
-			opacity: 1
-			pointer-events: inherit
-			@media (max-width: 575.98px)
-				top: 160%
-		.dropdown-item
-			display: block
-			font-size: 13px
-			font-weight: 600
-			padding: 4px 16px
-			font-family: 'Titillium Web', sans-serif
-			text-transform: uppercase
-			background: #05385C !important
-
 .cart-events
 	color: #05385C
 	height: 100%
@@ -1036,23 +1049,34 @@ main
 	background-position: center center
 	width: 14px
 	height: 14px
+	&.bg-icons2
+		width: 16px
+		height: 16px
 
 .bg-calendar
 	background-image: url(../img/calendar.svg)
-
 .bg-time
 	background-image: url(../img/time.svg)
-
 .bg-location
 	background-image: url(../img/location.svg)
-
 .bg-cross-white
 	background-image: url(../img/cross.svg)
-
 .bg-cross-pink
 	background-image: url(../img/cross2.svg)
+.bg-pencil
+	background-image: url(../img/pencil.svg)
 
+.points-wrap
+	display: inline-block
+	font-size: 0
+	.bg-img &, .img-transform &
+		position: absolute
+		right: 10px
+		top: 10px
+		.three-points
+			background-color: rgba(255, 255, 255, .5)
 .link-circle
+	text-align: center
 	display: inline-block
 	border-radius: 100px
 	height: 31px
@@ -1062,14 +1086,13 @@ main
 	background-position: center center
 	&.three-points
 		background-image: url(../img/points.svg)
-		.bg-img &, .img-transform &
-			position: absolute
-			right: 10px
-			top: 10px
-			background-color: rgba(255, 255, 255, 0.5)
 	&.link-share
 		background-image: url(../img/share.svg)
 		background-position: 45% center
+		border: 1px solid #DADBDD
+	&.link-share-2
+		background-image: url(../img/share-2.svg)
+		background-position: center center
 		border: 1px solid #DADBDD
 
 .bg-img 
@@ -1135,6 +1158,10 @@ main
 	padding: 11px 36px
 .btn-startup-blue
 	background: #05385C
+.btn-gmail
+	background: #EA4235
+.btn-linkedin
+	background: #0076B9
 
 .breadcrumb
 	background: inherit
@@ -1144,8 +1171,8 @@ main
 	font-family: 'Titillium Web', sans-serif
 	margin-bottom: 0
 	.breadcrumb-item
-		padding-left: 6px
 		+ .breadcrumb-item
+			padding-left: 6px
 			&:before
 				content: ">"
 				padding-right: 6px
@@ -1155,13 +1182,17 @@ main
 			color: #797676
 
 .or
+	font-size: 14px
+	text-align: center
 	position: relative
 	span
 		background: #FFF
 		display: inline-block
-		padding: 4px 10px
+		padding: 8.5px
 		position: relative
 		z-index: 2
+		border-radius: 100px
+		min-width: 40px
 	&:before 
 		content: ""
 		position: absolute
@@ -1170,8 +1201,11 @@ main
 		top: 50%
 		right: 0
 		transform: translateY(-50%)
-		background: #E3E6ED
+		background: #DCDCDC
 		z-index: 1
+	&.or-2
+		span 
+			border: 1px solid #DCDCDC
 
 .step-2, .step-3, .step-4
 	display: none
@@ -1337,8 +1371,6 @@ main
 		transform: translateY(-50%)
 
 .modal
-	@media (min-width: 1200px)
-		padding-left: 280px
 	.close 
 		position: absolute
 		width: 38px
@@ -1361,6 +1393,14 @@ main
 	padding-bottom: 50px
 	@media (min-width: 576px)
 		padding: 50px
+@media (min-width: 576px)
+	.modal-sm
+		max-width: 400px
+@media (min-width: 768px)
+	.modal-md
+		max-width: 600px
+	.modal-my
+		max-width: 650px
 @media (min-width: 992px)
 	.modal-lg, .modal-xl
 		max-width: 780px
@@ -1372,12 +1412,19 @@ main
 		padding: 15px
 	.bg-img-companies
 		width: 80px
-	.link-circle
+	.points-wrap
 		position: absolute
 		right: 4px
 		top: 8px
-		&.three-points 
-			background-image: url(../img/points-gray.svg)
+
+.sidebar-1
+	.points-wrap 
+		margin-top: -5px
+		margin-right: -13px
+
+.content-companies, .sidebar-1
+	.three-points 
+		background-image: url(../img/points-gray.svg)
 
 .followers
 	height: 26px
@@ -1467,10 +1514,49 @@ main
 				img	
 					transform: rotate(-90deg)
 
+.block-notif
+	border-bottom: 1px solid #E3E6ED
+	padding-bottom: 15px
+	margin-bottom: 15px
+.bg-img-notif
+	width: 40px
+	border-radius: 100px
+
+.delete 
+	background-image: url(../img/delete.svg)
+	margin-right: -8px
+	
+.link-pencil
+	position: absolute 
+	bottom: -22.5px
+	left: 50%
+	padding: 12px
+	width: 45px
+	height: 45px
+	transform: translateX(-50%)
+
+.bg-gray2
+	background-color: #F6F7F9
+
+.b-1, .cart-follows
+	border: 1px solid #ECEBED
+
+.investor
+	display: inline-block
+	background: #FFF
+	border-radius: 100px
+	padding: 9px 14px
+	font-size: 14px
+	color: #05385C
+	margin: 8px 8px 0 0
+	
 // Website pages
 
 .section-3
 	padding: 70px 0 
+
+.section-4
+	padding: 8px 0 40px
 
 .block-startups
 	color: #fff
@@ -1481,13 +1567,22 @@ main
 	@media (max-width: 575.98px)
 		padding-left: 15px
 		padding-right: 15px
-	.bl 
-		padding: 15px 35px
-		text-align: center
-		border-radius: 3px
-		background-color: #71C9D9
+
+.bl 
+	color: #fff
+	padding: 15px 35px
+	text-align: center
+	border-radius: 3px
+	background-color: #71C9D9
+	@media (min-width: 992px)
+		width: 221px
+	&.bl-2
+		padding: 20px
+		text-align: left
 		@media (min-width: 992px)
-			width: 221px
+			width: 373px
+		@media (max-width: 1199.98px)
+			padding: 15px
 
 .filters
 	@media (min-width: 768px)
@@ -1559,6 +1654,8 @@ main
 	background-color: #fff
 	position: relative
 	color: #797676
+	.car-1 & 
+		border: 1px solid #ECEBED
 	&.card-startup-2
 		@media (min-width: 576px)
 			padding: 30px 30px 24px
@@ -1619,6 +1716,9 @@ main
 	width: 100px
 	height: 100px
 	overflow: hidden
+	&.ava-2 
+		width: 120px
+		height: 120px
 
 .link-circle.fab
 	font-size: 10px
@@ -1634,84 +1734,204 @@ main
 		background-color: #4267B2
 	&.fa-twitter
 		background-color: #03A9F4
+	&.fa-blogger-b
+		background-color: #F77D00
+	&.fa-reddit-alien
+		background-color: #FF4300
+	&.fa-tumblr
+		background-color: #34465D
+	&.fa-youtube
+		background-color: #C62E24
+	.card-startup-2 &:not([class*="fab-"])
+		opacity: 1 !important
+		&:not(:hover)
+			background: #A2A2A2
+	&.fab-lg
+		font-size: 14px
+		line-height: 34px
+		width: 34px
+		height: 34px
+		margin-left: 2.5px
+		margin-right: 2.5px
+	@media (min-width: 768px)
+		&.fab-xl
+			font-size: 22px
+			line-height: 55px
+			width: 55px
+			height: 55px
+			margin-left: 5px
+			margin-right: 5px
 
-// 25.01.2021
+.car-1
+	border-radius: 3px
+	background-color: #fff
+	margin-bottom: 30px
+	padding: 30px
+	@media (max-width: 1199.98px)
+		padding: 20px
+	@media (max-width: 991.98px)
+		padding: 15px
+	@media (max-width: 767.98px)
+		margin-bottom: 15px
 
-.bg-gray2
-	background-color: #F6F7F9
+.car-2
+	padding: 50px
+	margin-bottom: 0 !important
+	@media (max-width: 575.98px)
+		padding: 30px 15px
 
-.form-investors	
-	position: relative
-	.form-control
-		background: #F6F7F9
-		padding-left: 46px
-		&:focus 
-			background: #F6F7F9
-	img
+.image
+	width: 120px
+	border: 1px solid #ECEBED
+	border-radius: 3px
+
+.dropdown-menu
+	transition: .3s
+	opacity: 0
+	pointer-events: none
+	display: block
+	min-width: auto
+	padding: 15px 0
+	margin-top: 8px
+	border-color: #EBECED
+	top: 75% !important
+	left: auto !important
+	right: 50% !important
+	transform: translate(50%, 0) !important
+	&.show
+		opacity: 1
+		pointer-events: inherit
+		top: 100% !important
+	.dropdown-item
+		color: #797676 !important
+		display: block
+		font-size: 12px
+		padding: 3px 20px
+		background: transparent !important
+
+.dropdown
+	&:before, &:after
+		content: ''
+		border-color: transparent
+		border-style: solid
 		position: absolute
-		top: 50%
-		transform: translateY(-50%)
-		left: 20px
+		left: 50%
+		transform: translateX(-50%)
+		border-width:  0 .5rem .5rem .5rem
+		opacity: 0
+		pointer-events: none
+		top: 75%
+		z-index: 1001
+		transition: .3s
+	&:before
+		top: 75%
+		border-bottom-color: #EBECED
+	&:after
+		top: calc(75% + 1px)
+		border-bottom-color: #fff
+	&.show
+		&:before, &:after
+			opacity: 1
+		&:before
+			top: 100%
+		&:after
+			top: calc(100% + 1px)
 
-.form-password
-	.form-control
-		background: #F6F7F9
-		&:focus 
-			background: #F6F7F9
+.dropdown-1
+	.dropdown-menu
+		right: -7px !important
+		transform: none !important
 
-.b-1
-	border: 1px solid #ECEBED
+.dropdown-2
+	.dropdown-menu
+		width: 320px
+		padding: 24px
+		@media (max-width: 767.98px)
+			right: -25px !important
+			transform: none !important
 
-.calendar-time
-	position: absolute 
-	top: 50%
-	right: 20px
-	transform: translateY(-50%)
+.bell 
+	.dropdown-menu
+		padding: 20px 20px 12px
+		@media (max-width: 767.98px)
+			right: -111px !important
 
-.investor
-	display: inline-block
-	background: #FFF
-	border-radius: 100px
-	padding: 9px 14px
-	font-size: 14px
-	color: #05385C
+.col-wrap
+	> [class^="col"]
+		padding-top: 5px 
+		padding-bottom: 15px
+		@media (min-width: 992px)
+			+ [class^="col"]
+				&:before 
+					content: ''
+					position: absolute
+					top: 50%
+					left: 0
+					height: 60px
+					transform: translateY(-50%)
+					border-left: 1px solid #ECEBED
 
-.block-notif
-	border-bottom: 1px solid #E3E6ED
-	padding-bottom: 15px
-	margin-bottom: 15px
+.gray-block	
+	font-size: 12px
+	font-weight: 600
+	font-family: 'Titillium Web', sans-serif
+	padding: 20px
+	background-color: #F4F5F8
+	+ .gray-block	
+		margin-top: 20px
+	@media (max-width: 1199.98px)
+		padding: 15px
+		+ .gray-block
+			margin-top: 15px
+	a 
+		display: inline-block
+		margin-right: 15px
 
-.bg-img-notif
-	width: 40px
-	border-radius: 100px
+.mw-500	
+	max-width: 500px
+	margin: 0 auto
+.mw-550	
+	max-width: 550px
+	margin: 0 auto
 
-.delete 
-	background-image: url(../img/delete.svg)
-	margin-right: -8px
+// 28/01/2021
 
-// 26.01.2026
+.bg-100
+	height: 100%
+	min-height: 200px
+	display: block
 
-@media (min-width: 992px)
-	.modal-my
-		max-width: 650px
+.link-gray
+	color: #181B31!important
+	font-size: 18px
+	opacity: .3
 
-.bg-pencil
-	background-image: url(../img/pencil.svg)
+.bg-calendar-white
+	background-image: url(../img/calendar-white.svg)
 
-.cart-follows
-	box-shadow: none
-	border: 1px solid #ECEBED
+.header-2
+	padding-bottom: 24px
+	> .container
+		padding-top: 320px
+		padding-bottom: 0
+		@media (max-width: 575.98px)
+			min-height: 100vh
+			padding-top: 260px
 
-.bg-icons2
-	width: 16px
-	height: 16px
-
-.link-pencil
-	position: absolute 
-	bottom: -22.5px
-	left: 50%
-	padding: 12px
-	width: 45px
-	height: 45px
-	transform: translateX(-50%)
+.list-icons
+	list-style: none 
+	padding: 0
+	margin-bottom: 24px
+	>	li 
+		padding: 0 0 4px 20px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			top: 6px
+			left: 0
+			width: 10px
+			height: 10px
+			border-radius: 100px
+			background: #71C9D9
 
